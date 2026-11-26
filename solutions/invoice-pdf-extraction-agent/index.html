@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocFlow B2B: Automated Invoice &amp; Purchase Order PDF-to-ERP Extraction Agent | TuringTec Agent Studio</title>
+  <meta name="description" content="Extract vendor details, NIT/Tax IDs, line items, IVA/taxes and math-validated totals from B2B PDF invoices and purchase orders into JSON, Excel, or ERP webhooks." />
+  <link rel="canonical" href="https://gabhack.github.io/turingtec-agent-studio/solutions/invoice-pdf-extraction-agent/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="DocFlow B2B: Automated Invoice &amp; Purchase Order PDF-to-ERP Extraction Agent" />
+  <meta property="og:description" content="Extract vendor details, NIT/Tax IDs, line items, IVA/taxes and math-validated totals from B2B PDF invoices and purchase orders into JSON, Excel, or ERP webhooks." />
+  <meta property="og:url" content="https://gabhack.github.io/turingtec-agent-studio/solutions/invoice-pdf-extraction-agent/" />
+  <meta property="og:image" content="https://gabhack.github.io/turingtec-agent-studio/assets/og/invoice-pdf-extraction-agent.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://gabhack.github.io/turingtec-agent-studio/assets/og/invoice-pdf-extraction-agent.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TuringTec Agent Studio", "item": "https://gabhack.github.io/turingtec-agent-studio/"}, {"@type": "ListItem", "position": 2, "name": "Invoice & PO PDF-to-ERP Extraction Agent", "item": "https://gabhack.github.io/turingtec-agent-studio/solutions/invoice-pdf-extraction-agent/"}]}, {"@type": "SoftwareApplication", "name": "Invoice & PO PDF-to-ERP Extraction Agent", "description": "Extract vendor details, NIT/Tax IDs, line items, IVA/taxes and math-validated totals from B2B PDF invoices and purchase orders into JSON, Excel, or ERP webhooks.", "applicationCategory": "BusinessApplication", "operatingSystem": "Cross-Platform", "url": "https://gabhack.github.io/turingtec-agent-studio/solutions/invoice-pdf-extraction-agent/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does DocFlow charge per document forever?", "acceptedAnswer": {"@type": "Answer", "text": "With our $39 n8n Pack or $99 Business-in-a-Box, you self-host the agent and pay only your raw LLM token cost (~$0.001-$0.003 per invoice)."}}, {"@type": "Question", "name": "Can it catch supplier math discrepancies automatically?", "acceptedAnswer": {"@type": "Answer", "text": "Yes—deterministic post-extraction checks verify line totals and IVA/VAT sums before pushing to accounting."}}]}]}</script>
+</head>
+<body>
+  <div class="accent-bar" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../">
+        <div class="brand-mark">TT</div>
+        <div><div class="brand-title">TuringTec Agent Studio</div><div class="brand-sub">Invoice &amp; PO PDF-to-ERP Extraction Agent</div></div>
+      </a>
+      <div class="nav-actions">
+        <a class="btn" href="../../#sandboxes">Try Live Demo ($0)</a>
+        <a class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Get Agent Kits →</a>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div style="font-size:0.82rem; color:var(--muted); margin-bottom:0.85rem;">
+      <a href="../../" style="color:var(--brand); text-decoration:none;">TuringTec Agent Studio</a> / Invoice &amp; PO PDF-to-ERP Extraction Agent
+    </div>
+    <section class="card hero">
+      <div>
+        <span class="badge badge-brand">BACK-OFFICE FINANCE · IDP DOCUMENT AGENT</span>
+        <h1>DocFlow B2B: Automated Invoice &amp; Purchase Order PDF-to-ERP Extraction Agent</h1>
+        <p>Eliminate manual invoice typing and accounting errors. DocFlow B2B extracts line-by-line structured JSON from vendor invoices and purchase orders, runs deterministic math/tax checks with confidence scoring, and routes verified entries straight to Sheets or your ERP.</p>
+      </div>
+      <div class="card" style="background:var(--surface-2); box-shadow:none;">
+        <div style="font-size:0.8rem; color:var(--muted); font-weight:700;">SELF-HOSTED KIT</div>
+        <div style="font-size:1.15rem; font-weight:800; margin:0.2rem 0 0.65rem;">$39 n8n Workflow / $99 Business-in-a-Box</div>
+        <div style="font-size:0.8rem; color:var(--muted); font-weight:700;">TURNKEY DEPLOYMENT</div>
+        <div style="font-size:1.05rem; font-weight:700; margin:0.2rem 0 0.85rem; color:var(--success);">$690 7-Day Turnkey Pilot</div>
+        <div style="display:flex; flex-direction:column; gap:0.5rem;">
+          <a class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Buy Self-Hosted Kit on Gumroad →</a>
+          <a class="btn" href="../../#sandboxes">Test Live Sandbox Free</a>
+        </div>
+      </div>
+    </section>
+    <section class="card" style="margin-top:1.2rem;">
+      <h2 style="margin:0 0 0.5rem; font-size:1.2rem;">Production Architecture &amp; Capabilities</h2>
+      <table class="data-table"><thead><tr><th>Component</th><th>Production Specification</th></tr></thead><tbody><tr><td><strong>Extracted Fields</strong></td><td>Vendor Name, Tax ID/NIT, Invoice #, Date, Line Items, Tax, Total</td></tr><tr><td><strong>Validation Gate</strong></td><td>Deterministic subtotal + tax arithmetic check + confidence score</td></tr><tr><td><strong>Exception Routing</strong></td><td>Low-confidence or mismatched totals route automatically to human review</td></tr><tr><td><strong>Outputs</strong></td><td>Strict JSON Schema, CSV/Excel, or Webhook POST to ERP / Accounting</td></tr><tr><td><strong>Deployment Options</strong></td><td>$39 n8n Pack · $99 Business-in-a-Box · $690 7-Day Turnkey Pilot</td></tr></tbody></table>
+    </section>
+    <section class="card" style="margin-top:1.2rem;">
+      <h2 style="margin:0 0 0.35rem; font-size:1.15rem;">Frequently Asked Questions</h2>
+      <div style='margin-top:0.85rem;'><h3 style='margin:0 0 0.25rem; font-size:1rem;'>Does DocFlow charge per document forever?</h3><p style='margin:0; color:var(--muted); font-size:0.9rem;'>With our $39 n8n Pack or $99 Business-in-a-Box, you self-host the agent and pay only your raw LLM token cost (~$0.001-$0.003 per invoice).</p></div><div style='margin-top:0.85rem;'><h3 style='margin:0 0 0.25rem; font-size:1rem;'>Can it catch supplier math discrepancies automatically?</h3><p style='margin:0; color:var(--muted); font-size:0.9rem;'>Yes—deterministic post-extraction checks verify line totals and IVA/VAT sums before pushing to accounting.</p></div>
+    </section>
+    <footer class="footer">
+      <div class="footer-grid">
+        <div><h4>Other TuringTec AI Agent Solutions</h4><ul><li><a href="../clinic-whatsapp-voice-agent/">Clinic WhatsApp &amp; Voice Receptionist Agent</a></li><li><a href="../hardware-b2b-quoting-agent/">B2B Hardware &amp; Wholesale RFQ Quoting Agent</a></li><li><a href="../aws-finops-guardrails-mcp/">AWS FinOps &amp; LLM Token Guardrails MCP</a></li><li><a href="../n8n-ai-agent-workflows-pack/">15 Production n8n AI Agent Workflows Pack</a></li><li><a href="../mcp-agent-business-in-a-box/">AI Agent Business-in-a-Box (All-Access Vault)</a></li></ul></div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../../">TuringTec Agent Studio Home (4 Live Sandboxes)</a></li>
+            <li><a href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Gumroad Store ($39–$99 Kits)</a></li>
+            <li><a href="https://github.com/gabhack/aws-finops-guard" target="_blank" rel="noopener">aws-finops-guard Open-Core CLI + MCP</a></li>
+            <li><a href="https://gabhack.github.io/cloudcert-lab/" target="_blank" rel="noopener">CloudCert Lab Multi-Cloud Simulator</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>Updated 2026-11-26 · TuringTec Agent Studio.</div>
+    </footer>
+  </main>
+</body>
+</html>

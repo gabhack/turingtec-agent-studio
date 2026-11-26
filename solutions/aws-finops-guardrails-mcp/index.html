@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWS FinOps &amp; LLM Token Guardrails: Open-Core CLI + stdio MCP Server with Terraform Auto-Fix | TuringTec Agent Studio</title>
+  <meta name="description" content="Audit AWS EBS, NAT Gateways, EIPs, idle RDS and Bedrock/OpenAI/Gemini token waste locally via CLI or Claude/Cursor MCP Server. Unlock Terraform HCL auto-remediation &amp; SARIF." />
+  <link rel="canonical" href="https://gabhack.github.io/turingtec-agent-studio/solutions/aws-finops-guardrails-mcp/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="AWS FinOps &amp; LLM Token Guardrails: Open-Core CLI + stdio MCP Server with Terraform Auto-Fix" />
+  <meta property="og:description" content="Audit AWS EBS, NAT Gateways, EIPs, idle RDS and Bedrock/OpenAI/Gemini token waste locally via CLI or Claude/Cursor MCP Server. Unlock Terraform HCL auto-remediation &amp; SARIF." />
+  <meta property="og:url" content="https://gabhack.github.io/turingtec-agent-studio/solutions/aws-finops-guardrails-mcp/" />
+  <meta property="og:image" content="https://gabhack.github.io/turingtec-agent-studio/assets/og/aws-finops-guardrails-mcp.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://gabhack.github.io/turingtec-agent-studio/assets/og/aws-finops-guardrails-mcp.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TuringTec Agent Studio", "item": "https://gabhack.github.io/turingtec-agent-studio/"}, {"@type": "ListItem", "position": 2, "name": "AWS FinOps & LLM Token Guardrails MCP", "item": "https://gabhack.github.io/turingtec-agent-studio/solutions/aws-finops-guardrails-mcp/"}]}, {"@type": "SoftwareApplication", "name": "AWS FinOps & LLM Token Guardrails MCP", "description": "Audit AWS EBS, NAT Gateways, EIPs, idle RDS and Bedrock/OpenAI/Gemini token waste locally via CLI or Claude/Cursor MCP Server. Unlock Terraform HCL auto-remediation & SARIF.", "applicationCategory": "BusinessApplication", "operatingSystem": "Cross-Platform", "url": "https://gabhack.github.io/turingtec-agent-studio/solutions/aws-finops-guardrails-mcp/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does aws-finops-guard require sending my AWS credentials to an external server?", "acceptedAnswer": {"@type": "Answer", "text": "Never. All audits run 100% locally against your JSON cost/resource snapshots with zero external network calls (except one-time Gumroad Pro license verification)."}}, {"@type": "Question", "name": "How quickly does the $49 Pro license pay for itself?", "acceptedAnswer": {"@type": "Answer", "text": "Fixing a single idle NAT Gateway ($32.85/mo) or switching one triage agent from a premium model to a fast model pays back the $49 license in days."}}]}]}</script>
+</head>
+<body>
+  <div class="accent-bar" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../">
+        <div class="brand-mark">TT</div>
+        <div><div class="brand-title">TuringTec Agent Studio</div><div class="brand-sub">AWS FinOps &amp; LLM Token Guardrails MCP</div></div>
+      </a>
+      <div class="nav-actions">
+        <a class="btn" href="../../#sandboxes">Try Live Demo ($0)</a>
+        <a class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Get Agent Kits →</a>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div style="font-size:0.82rem; color:var(--muted); margin-bottom:0.85rem;">
+      <a href="../../" style="color:var(--brand); text-decoration:none;">TuringTec Agent Studio</a> / AWS FinOps &amp; LLM Token Guardrails MCP
+    </div>
+    <section class="card hero">
+      <div>
+        <span class="badge badge-brand">CLOUD ARCHITECT · OPEN-CORE CLI + MCP SERVER</span>
+        <h1>AWS FinOps &amp; LLM Token Guardrails: Open-Core CLI + stdio MCP Server with Terraform Auto-Fix</h1>
+        <p>Cut 25–60% of cloud and AI agent waste without sharing AWS IAM credentials with third-party SaaS dashboards. Run aws-finops-guard locally in your terminal or inside Claude Desktop/Cursor via MCP stdio, then unlock safe Terraform HCL patches &amp; CI/CD SARIF gates.</p>
+      </div>
+      <div class="card" style="background:var(--surface-2); box-shadow:none;">
+        <div style="font-size:0.8rem; color:var(--muted); font-weight:700;">SELF-HOSTED KIT</div>
+        <div style="font-size:1.15rem; font-weight:800; margin:0.2rem 0 0.65rem;">$0 Open-Core / $49 Pro License Key</div>
+        <div style="font-size:0.8rem; color:var(--muted); font-weight:700;">TURNKEY DEPLOYMENT</div>
+        <div style="font-size:1.05rem; font-weight:700; margin:0.2rem 0 0.85rem; color:var(--success);">$299 48-Hour FinOps Audit</div>
+        <div style="display:flex; flex-direction:column; gap:0.5rem;">
+          <a class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Buy Self-Hosted Kit on Gumroad →</a>
+          <a class="btn" href="../../#sandboxes">Test Live Sandbox Free</a>
+        </div>
+      </div>
+    </section>
+    <section class="card" style="margin-top:1.2rem;">
+      <h2 style="margin:0 0 0.5rem; font-size:1.2rem;">Production Architecture &amp; Capabilities</h2>
+      <table class="data-table"><thead><tr><th>Component</th><th>Production Specification</th></tr></thead><tbody><tr><td><strong>AWS Rules Included</strong></td><td>Unattached EBS, gp2-&gt;gp3, idle NAT Gateways, $0 S3 Gateway Endpoints, EIPs, RDS</td></tr><tr><td><strong>AI / LLM FinOps Rules</strong></td><td>Detects premium models used for classification/triage + missing prompt caching</td></tr><tr><td><strong>MCP Integration</strong></td><td>Zero-dependency JSON-RPC 2.0 stdio server for Claude Desktop, Cursor &amp; VS Code</td></tr><tr><td><strong>Pro Unlock ($49)</strong></td><td>Safe Terraform HCL patches, AWS CLI commands &amp; CI/CD SARIF 2.1.0 reports</td></tr><tr><td><strong>Source Repository</strong></td><td>Open-Core MIT on GitHub (github.com/gabhack/aws-finops-guard)</td></tr></tbody></table>
+    </section>
+    <section class="card" style="margin-top:1.2rem;">
+      <h2 style="margin:0 0 0.35rem; font-size:1.15rem;">Frequently Asked Questions</h2>
+      <div style='margin-top:0.85rem;'><h3 style='margin:0 0 0.25rem; font-size:1rem;'>Does aws-finops-guard require sending my AWS credentials to an external server?</h3><p style='margin:0; color:var(--muted); font-size:0.9rem;'>Never. All audits run 100% locally against your JSON cost/resource snapshots with zero external network calls (except one-time Gumroad Pro license verification).</p></div><div style='margin-top:0.85rem;'><h3 style='margin:0 0 0.25rem; font-size:1rem;'>How quickly does the $49 Pro license pay for itself?</h3><p style='margin:0; color:var(--muted); font-size:0.9rem;'>Fixing a single idle NAT Gateway ($32.85/mo) or switching one triage agent from a premium model to a fast model pays back the $49 license in days.</p></div>
+    </section>
+    <footer class="footer">
+      <div class="footer-grid">
+        <div><h4>Other TuringTec AI Agent Solutions</h4><ul><li><a href="../clinic-whatsapp-voice-agent/">Clinic WhatsApp &amp; Voice Receptionist Agent</a></li><li><a href="../hardware-b2b-quoting-agent/">B2B Hardware &amp; Wholesale RFQ Quoting Agent</a></li><li><a href="../invoice-pdf-extraction-agent/">Invoice &amp; PO PDF-to-ERP Extraction Agent</a></li><li><a href="../n8n-ai-agent-workflows-pack/">15 Production n8n AI Agent Workflows Pack</a></li><li><a href="../mcp-agent-business-in-a-box/">AI Agent Business-in-a-Box (All-Access Vault)</a></li></ul></div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../../">TuringTec Agent Studio Home (4 Live Sandboxes)</a></li>
+            <li><a href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Gumroad Store ($39–$99 Kits)</a></li>
+            <li><a href="https://github.com/gabhack/aws-finops-guard" target="_blank" rel="noopener">aws-finops-guard Open-Core CLI + MCP</a></li>
+            <li><a href="https://gabhack.github.io/cloudcert-lab/" target="_blank" rel="noopener">CloudCert Lab Multi-Cloud Simulator</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>Updated 2026-11-26 · TuringTec Agent Studio.</div>
+    </footer>
+  </main>
+</body>
+</html>

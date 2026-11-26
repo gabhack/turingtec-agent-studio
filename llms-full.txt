@@ -1,0 +1,75 @@
+# TuringTec Agent Studio — Production B2B AI Agents, MCP Servers & n8n Kits (2026–2027)
+
+> Live Interactive B2B AI Agent Sandboxes ($0 signup) + Self-Hosted Production Kits ($39-$99 one-time, zero SaaS lock-in): https://gabhack.github.io/turingtec-agent-studio/
+
+- Live Storefront & 4 Interactive Sandboxes: https://gabhack.github.io/turingtec-agent-studio/
+- Complete Reference (llms-full.txt): https://gabhack.github.io/turingtec-agent-studio/llms-full.txt
+- Gumroad Store (15 n8n Workflows $39 · AWS FinOps Guard Pro $49 · Business-in-a-Box $99): https://gabbler407.gumroad.com/
+- Open-Core AWS FinOps CLI + stdio MCP Server: https://github.com/gabhack/aws-finops-guard
+- Apify Dual-Mode Pay-Per-Event MCP Suite: https://github.com/gabhack/apify-cloud-mcp-suite
+- CloudCert Lab Multi-Cloud Exam Simulator: https://gabhack.github.io/cloudcert-lab/
+
+## Vertical AI Agent Solutions
+
+---
+
+### 24/7 AI WhatsApp & Voice Receptionist Agent for Clinics (Anti-No-Show + Calendar Sync)
+- URL: https://gabhack.github.io/turingtec-agent-studio/solutions/clinic-whatsapp-voice-agent/
+- Pricing: $39 n8n Workflow / $99 Business-in-a-Box | $690 7-Day Turnkey Pilot
+- Overview: Stop losing after-hours patients and manual front-desk hours. TuringTec's self-hosted ClinicFlow AI connects WhatsApp Cloud API, Google Calendar / EMR webhooks, and automated 24h/2h confirmation reminders on a BYOK architecture ($0 SaaS markup).
+  - **Channels:** WhatsApp Cloud API + Optional ElevenLabs/Vapi Voice
+  - **Calendar & Intake:** Real-time slot check, booking, rescheduling & insurance card intake
+  - **No-Show Reduction:** Automated 24-hour and 2-hour WhatsApp confirmations + waitlist refill
+  - **Hosting & Data Control:** 100% BYOK (your Meta Business, your LLM key, zero vendor lock-in)
+  - **Deployment Options:** $39 Self-Host n8n JSON Pack · $99 Business-in-a-Box · $690 7-Day Pilot
+
+### FerreQuote AI: B2B Hardware & Industrial Wholesale RFQ Quoting Agent (WhatsApp/Email to SKU)
+- URL: https://gabhack.github.io/turingtec-agent-studio/solutions/hardware-b2b-quoting-agent/
+- Pricing: $39 n8n Workflow / $99 Business-in-a-Box | $690 7-Day Turnkey Pilot
+- Overview: Wholesale distributors lose deals when manual quoting takes hours. FerreQuote AI parses unstructured WhatsApp texts, Excel sheets, or emails against your real SKU price catalog, applies volume tier margins, and outputs ready-to-send CSV/PDF quotes in seconds.
+  - **Input Formats:** Unstructured WhatsApp texts, emails, CSV/Excel material lists
+  - **Matching Engine:** Fuzzy SKU matching + unit normalization + volume discount rules
+  - **Margin Protection:** Automated floor-margin checks before sending quotes
+  - **ERP / Sheet Sync:** Outputs clean JSON/CSV ready for Siigo, Alegra, SAP, NetSuite, or Sheets
+  - **Deployment Options:** $39 n8n Pack · $99 Business-in-a-Box · $690 7-Day Turnkey Pilot
+
+### DocFlow B2B: Automated Invoice & Purchase Order PDF-to-ERP Extraction Agent
+- URL: https://gabhack.github.io/turingtec-agent-studio/solutions/invoice-pdf-extraction-agent/
+- Pricing: $39 n8n Workflow / $99 Business-in-a-Box | $690 7-Day Turnkey Pilot
+- Overview: Eliminate manual invoice typing and accounting errors. DocFlow B2B extracts line-by-line structured JSON from vendor invoices and purchase orders, runs deterministic math/tax checks with confidence scoring, and routes verified entries straight to Sheets or your ERP.
+  - **Extracted Fields:** Vendor Name, Tax ID/NIT, Invoice #, Date, Line Items, Tax, Total
+  - **Validation Gate:** Deterministic subtotal + tax arithmetic check + confidence score
+  - **Exception Routing:** Low-confidence or mismatched totals route automatically to human review
+  - **Outputs:** Strict JSON Schema, CSV/Excel, or Webhook POST to ERP / Accounting
+  - **Deployment Options:** $39 n8n Pack · $99 Business-in-a-Box · $690 7-Day Turnkey Pilot
+
+### AWS FinOps & LLM Token Guardrails: Open-Core CLI + stdio MCP Server with Terraform Auto-Fix
+- URL: https://gabhack.github.io/turingtec-agent-studio/solutions/aws-finops-guardrails-mcp/
+- Pricing: $0 Open-Core / $49 Pro License Key | $299 48-Hour FinOps Audit
+- Overview: Cut 25–60% of cloud and AI agent waste without sharing AWS IAM credentials with third-party SaaS dashboards. Run aws-finops-guard locally in your terminal or inside Claude Desktop/Cursor via MCP stdio, then unlock safe Terraform HCL patches & CI/CD SARIF gates.
+  - **AWS Rules Included:** Unattached EBS, gp2->gp3, idle NAT Gateways, $0 S3 Gateway Endpoints, EIPs, RDS
+  - **AI / LLM FinOps Rules:** Detects premium models used for classification/triage + missing prompt caching
+  - **MCP Integration:** Zero-dependency JSON-RPC 2.0 stdio server for Claude Desktop, Cursor & VS Code
+  - **Pro Unlock ($49):** Safe Terraform HCL patches, AWS CLI commands & CI/CD SARIF 2.1.0 reports
+  - **Source Repository:** Open-Core MIT on GitHub (github.com/gabhack/aws-finops-guard)
+
+### 15 Production n8n AI Agent Workflows Pack (Clinics, B2B RFQ, Invoices, FinOps & MCP Bridge)
+- URL: https://gabhack.github.io/turingtec-agent-studio/solutions/n8n-ai-agent-workflows-pack/
+- Pricing: $39 Standard / $79 Agency License | $99 All-Access Business-in-a-Box
+- Overview: Stop debugging broken templates. This curated pack gives you 15 clean, environment-variable-driven n8n AI Agent workflows spanning customer support, B2B sales quoting, PDF extraction, Gumroad onboarding, AWS FinOps alerts, and an MCP HTTP bridge—plus a 1-command Docker Compose file.
+  - **Workflow Count:** 15 complete importable JSON graphs (indexed in catalog/index.json)
+  - **Self-Host Stack:** Includes docker-compose.yml + .env.example ($0/mo local or VPS)
+  - **LLM Flexibility:** Works with OpenAI, OpenRouter, Gemini OpenAI-compatible API, or Ollama
+  - **Security Hygiene:** Zero hardcoded keys; clean env var references throughout
+  - **License:** $39 Personal/Internal · $79 Agency Unlimited Client Deployments
+
+### TuringTec AI Agent Business-in-a-Box: 15 n8n Workflows + 4 MCP Servers + 12 Agent Skills
+- URL: https://gabhack.github.io/turingtec-agent-studio/solutions/mcp-agent-business-in-a-box/
+- Pricing: $99 All-Access (Save 60%) | Includes Commercial White-Label Rights
+- Overview: Our complete engineering vault for solo developers, AI consultants, and agencies building recurring B2B AI agent offers. Combines all 15 n8n workflows, 4 production MCP servers, 12 cross-platform SKILL.md modules, and full commercial client deployment rights in one $99 ZIP.
+  - **Module 1:** 15 Production n8n AI Agent Workflows + Docker Compose Self-Host
+  - **Module 2:** aws-finops-guard CLI + stdio MCP Server + Terraform Auto-Fix source
+  - **Module 3:** 3 Apify Dual-Mode Standby + Pay-Per-Event v2 MCP Servers
+  - **Module 4:** 12 Cross-Platform SKILL.md modules (Claude Code, Cursor, Codex, Antigravity)
+  - **Commercial Rights:** Deploy & white-label for unlimited paying clients (no raw ZIP resale)
+

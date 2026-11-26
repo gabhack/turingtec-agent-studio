@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TuringTec Agent Studio — Production B2B AI Agents, MCP Servers &amp; n8n Kits (2026–2027)</title>
+  <meta name="description" content="Try 4 live zero-signup B2B AI Agent sandboxes (Hardware RFQ Quoter, Invoice PDF Extractor, AWS FinOps Guard, Clinic WhatsApp Receptionist). Buy production n8n workflows ($39), AWS FinOps MCP ($49), or the complete AI Agent Business-in-a-Box ($99)." />
+  <link rel="canonical" href="https://gabhack.github.io/turingtec-agent-studio/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="TuringTec Agent Studio — Production B2B AI Agents &amp; MCP Servers" />
+  <meta property="og:description" content="Interactive B2B AI Agent sandboxes + deployable n8n workflows, MCP servers, AWS FinOps Guardrails &amp; turnkey pilots with zero monthly SaaS lock-in." />
+  <meta property="og:url" content="https://gabhack.github.io/turingtec-agent-studio/" />
+  <meta property="og:image" content="https://gabhack.github.io/turingtec-agent-studio/assets/og/home.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://gabhack.github.io/turingtec-agent-studio/assets/og/home.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://gumroad.com/js/gumroad.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "TuringTec Agent Studio",
+        "url": "https://gabhack.github.io/turingtec-agent-studio/",
+        "sameAs": [
+          "https://github.com/gabhack/turingtec-agent-studio",
+          "https://github.com/gabhack/aws-finops-guard",
+          "https://github.com/gabhack/apify-cloud-mcp-suite",
+          "https://gabhack.github.io/cloudcert-lab/"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "TuringTec AI Agent Business-in-a-Box & MCP Suite",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Cross-Platform (Docker, Python, Node, Web)",
+        "url": "https://gabhack.github.io/turingtec-agent-studio/",
+        "offers": [
+          { "@type": "Offer", "name": "Free Blueprint + Interactive Sandboxes", "price": "0", "priceCurrency": "USD" },
+          { "@type": "Offer", "name": "15 Production n8n AI Agent Workflows Pack", "price": "39", "priceCurrency": "USD", "url": "https://gabbler407.gumroad.com/" },
+          { "@type": "Offer", "name": "AWS FinOps & LLM Token Guard Pro", "price": "49", "priceCurrency": "USD", "url": "https://gabbler407.gumroad.com/" },
+          { "@type": "Offer", "name": "TuringTec AI Agent Business-in-a-Box (All-Access)", "price": "99", "priceCurrency": "USD", "url": "https://gabbler407.gumroad.com/" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do TuringTec AI Agent Kits require monthly SaaS subscriptions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Every kit runs self-hosted via Docker Compose or local Python/MCP stdio using your own API keys (BYOK), giving you 100% ownership and zero recurring platform markup."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I white-label these AI agents for my agency clients?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The $99 AI Agent Business-in-a-Box includes a commercial deployment license allowing you to customize and deploy all 15 n8n workflows, 4 MCP servers, and 12 Agent Skills for unlimited clients."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="accent-bar" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="./">
+        <div class="brand-mark">TT</div>
+        <div>
+          <div class="brand-title">TuringTec Agent Studio</div>
+          <div class="brand-sub">Production B2B AI Agents · MCP Servers · AWS FinOps</div>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="#sandboxes">Live Demos ($0)</a>
+        <a class="btn btn-ghost" href="#kits">Agent Kits ($39–$99)</a>
+        <a class="btn btn-ghost" href="#pilots">Turnkey Pilots</a>
+        <a class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Open Store →</a>
+        <button id="btnTheme" class="btn" type="button">Theme</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card hero">
+      <div>
+        <span class="badge badge-brand">SELF-HOSTED · ZERO SAAS LOCK-IN · BYOK ARCHITECTURE</span>
+        <h1>Ship Production B2B AI Agents &amp; MCP Servers in Minutes, Not Months</h1>
+        <p>
+          Test <strong>4 live browser AI agent sandboxes right now ($0 signup)</strong> — built for
+          <strong>B2B Hardware/Wholesale Quoting</strong>, <strong>Invoice PDF Extraction</strong>,
+          <strong>AWS &amp; LLM FinOps Guardrails</strong>, and <strong>24/7 Clinic WhatsApp Receptionists</strong>.
+          Grab self-hosted production kits ($39–$99 one-time) or book a 7-day turnkey pilot.
+        </p>
+        <div style="display:flex; gap:0.6rem; flex-wrap:wrap; margin-top:1.1rem;">
+          <a class="btn btn-primary" href="#sandboxes">Test Live Sandboxes Free →</a>
+          <a class="btn" href="#kits">Browse Agent Kits ($39–$99)</a>
+          <a class="btn btn-ghost" href="https://github.com/gabhack/aws-finops-guard" target="_blank" rel="noopener">GitHub Open-Core CLI</a>
+        </div>
+      </div>
+      <div class="card" style="background:var(--surface-2); box-shadow:none;">
+        <span class="badge badge-success">FLAGSHIP ALL-ACCESS VAULT · $99 ONCE</span>
+        <h3 style="margin:0.5rem 0 0.25rem;">AI Agent Business-in-a-Box</h3>
+        <ul class="check-list">
+          <li><strong>15 Production n8n AI Workflows</strong> + Docker Compose</li>
+          <li><strong>4 MCP Servers</strong> (Apify Standby PPE + AWS FinOps stdio)</li>
+          <li><strong>12 Cross-Platform Agent Skills</strong> (Claude / Cursor / Codex)</li>
+          <li><strong>Commercial White-Label License</strong> for unlimited clients</li>
+        </ul>
+        <a class="btn btn-primary" style="width:100%; margin-top:0.9rem;" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">
+          Unlock All-Access Vault ($99) →
+        </a>
+      </div>
+    </section>
+
+    <section class="metrics-grid" aria-label="Studio assets">
+      <div class="metric"><div class="metric-label">Production n8n AI Workflows</div><div class="metric-val">15 JSONs</div></div>
+      <div class="metric"><div class="metric-label">MCP Protocol Servers</div><div class="metric-val">4 Live</div></div>
+      <div class="metric"><div class="metric-label">Cross-Platform Agent Skills</div><div class="metric-val">12 SKILL.md</div></div>
+      <div class="metric"><div class="metric-label">Cloud Hosting Required</div><div class="metric-val">$0 / mo</div></div>
+    </section>
+
+    <!-- INTERACTIVE SANDBOXES -->
+    <section id="sandboxes">
+      <div class="section-head">
+        <div>
+          <span class="badge badge-brand">TRY BEFORE YOU BUY · ZERO API KEY NEEDED</span>
+          <h2>4 Interactive B2B AI Agent Sandboxes (Live in Your Browser)</h2>
+          <p>Paste messy inputs or adjust parameters to see exact deterministic outputs, JSON exports, and USD savings.</p>
+        </div>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab-btn active" data-tab="ferrequote" type="button">1. FerreQuote AI (B2B Hardware RFQ)</button>
+        <button class="tab-btn" data-tab="docflow" type="button">2. DocFlow B2B (Invoice Extractor)</button>
+        <button class="tab-btn" data-tab="finops" type="button">3. AWS &amp; LLM FinOps Guard</button>
+        <button class="tab-btn" data-tab="clinicflow" type="button">4. ClinicFlow AI (WhatsApp Receptionist)</button>
+      </div>
+
+      <!-- TAB 1: FERREQUOTE -->
+      <div id="tab-ferrequote" class="card sandbox-panel">
+        <div class="sandbox-grid">
+          <div>
+            <label class="field-label" for="fqInput">Paste Messy WhatsApp / Email Material Request (ES or EN):</label>
+            <textarea id="fqInput" rows="7">Hola necesito cotizar urgente para obra norte:
+40 bultos cemento gris 50kg
+12 tubos pvc sanitario 2 pulgadas
+5 cajas tornillo drywall 1 pulg
+3 galones pintura vinilo blanco tipo 1
+20 ladrillos estructurales</textarea>
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:0.65rem;">
+              <button id="btnFqRun" class="btn btn-primary" type="button">Generate B2B Quote →</button>
+              <button id="btnFqExport" class="btn" type="button">Download CSV Quote</button>
+              <a class="btn btn-ghost" href="solutions/hardware-b2b-quoting-agent/">Full Architecture →</a>
+            </div>
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+              <span class="badge badge-success" id="fqStatus">Instant SKU Match Ready</span>
+              <strong id="fqTotal" style="font-size:1.1rem;">$0.00 USD</strong>
+            </div>
+            <div id="fqTableWrap"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: DOCFLOW -->
+      <div id="tab-docflow" class="card sandbox-panel hidden">
+        <div class="sandbox-grid">
+          <div>
+            <label class="field-label" for="dfInput">Raw Invoice / Purchase Order Text (Paste or Edit):</label>
+            <textarea id="dfInput" rows="8">FACTURA ELECTRONICA DE VENTA No. FE-2026-8841
+PROVEEDOR: DISTRIBUIDORA INDUSTRIAL ANDINA S.A.S.
+NIT: 901.442.819-3
+FECHA: 2026-11-25
+ITEM 1: VALVULA BOLA BRONCE 1 PULG | CANT: 25 | UNIT: 14.50 | SUB: 362.50
+ITEM 2: CABLE THHN CALIBRE 12 ROLLO 100M | CANT: 6 | UNIT: 48.00 | SUB: 288.00
+SUBTOTAL: 650.50
+IVA 19%: 123.60
+TOTAL A PAGAR USD: 774.10</textarea>
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:0.65rem;">
+              <button id="btnDfRun" class="btn btn-primary" type="button">Extract ERP JSON →</button>
+              <button id="btnDfDownload" class="btn" type="button">Download JSON</button>
+              <a class="btn btn-ghost" href="solutions/invoice-pdf-extraction-agent/">Full Architecture →</a>
+            </div>
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.45rem;">
+              <span class="badge badge-success" id="dfScore">Confidence: 98.4% · Math Validated ✓</span>
+              <span class="badge badge-brand">Zero Discrepancies</span>
+            </div>
+            <pre id="dfOutput" class="code-out"></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: AWS FINOPS -->
+      <div id="tab-finops" class="card sandbox-panel hidden">
+        <div class="sandbox-grid">
+          <div style="display:flex; flex-direction:column; gap:0.75rem;">
+            <div>
+              <label class="field-label" for="finEbs">Unattached + Legacy gp2 EBS Storage (GB)</label>
+              <input id="finEbs" type="number" min="0" value="750" />
+            </div>
+            <div>
+              <label class="field-label" for="finNat">Monthly NAT Gateway Data Processing (GB without S3 Endpoint)</label>
+              <input id="finNat" type="number" min="0" value="1800" />
+            </div>
+            <div>
+              <label class="field-label" for="finRds">Idle Non-Prod RDS Monthly Spend (USD)</label>
+              <input id="finRds" type="number" min="0" value="292" />
+            </div>
+            <div>
+              <label class="field-label" for="finLlm">Monthly Input Tokens on Premium Model for Triage/Extraction (Millions)</label>
+              <input id="finLlm" type="number" min="0" value="45" />
+            </div>
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+              <a class="btn btn-primary" href="https://github.com/gabhack/aws-finops-guard" target="_blank" rel="noopener">Run Open-Core CLI + MCP →</a>
+              <a class="btn" href="solutions/aws-finops-guardrails-mcp/">Terraform Auto-Fix ($49)</a>
+            </div>
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.55rem;">
+              <span class="badge badge-warning">AVOIDABLE CLOUD &amp; AI WASTE</span>
+              <strong id="finTotal" style="font-size:1.25rem; color:var(--danger);">$0 / mo</strong>
+            </div>
+            <pre id="finOutput" class="code-out"></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 4: CLINICFLOW -->
+      <div id="tab-clinicflow" class="card sandbox-panel hidden">
+        <div class="sandbox-grid">
+          <div>
+            <div class="field-label">Click a Patient WhatsApp Message to Test 24/7 Autonomous Agent:</div>
+            <div style="display:flex; gap:0.45rem; flex-wrap:wrap; margin-bottom:0.75rem;">
+              <button class="btn" data-clinic-msg="book" type="button">📅 "Quiero cita limpieza viernes"</button>
+              <button class="btn" data-clinic-msg="price" type="button">💳 "¿Valor consulta y seguros?"</button>
+              <button class="btn" data-clinic-msg="reschedule" type="button">🔄 "Necesito mover mi cita"</button>
+              <button class="btn" data-clinic-msg="confirm" type="button">✅ "Sí confirmo asistencia 24h"</button>
+            </div>
+            <div id="clinicChat" class="chat-box"></div>
+          </div>
+          <div>
+            <span class="badge badge-success">CLINIC ANTI-NO-SHOW ROI CALCULATOR</span>
+            <h3 style="margin:0.45rem 0 0.55rem; font-size:1.05rem;">How Many Appointments Does 24/7 WhatsApp Recover?</h3>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.65rem;">
+              <div>
+                <label class="field-label" for="clMissed">Missed Leads / No-Shows per Month</label>
+                <input id="clMissed" type="number" min="1" value="18" />
+              </div>
+              <div>
+                <label class="field-label" for="clTicket">Avg. Patient Consultation Value (USD)</label>
+                <input id="clTicket" type="number" min="10" value="65" />
+              </div>
+            </div>
+            <div id="clinicRoi" class="card" style="margin-top:0.8rem; background:var(--surface-2); box-shadow:none;"></div>
+            <div style="margin-top:0.75rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
+              <a class="btn btn-primary" href="solutions/clinic-whatsapp-voice-agent/">See Full Clinic Stack →</a>
+              <a class="btn" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Get n8n Workflow ($39)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELF-SERVE KITS -->
+    <section id="kits">
+      <div class="section-head">
+        <div>
+          <span class="badge badge-brand">INSTANT DIGITAL DELIVERY · GUMROAD CHECKOUT</span>
+          <h2>Self-Hosted AI Agent Kits &amp; MCP Packs (Pay Once, Own Forever)</h2>
+          <p>Zero monthly platform fees. Bring your own API keys (BYOK), deploy on your laptop, Docker, or AWS account.</p>
+        </div>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card offer-card">
+          <div>
+            <span class="badge badge-brand">LEAD MAGNET · $0</span>
+            <h3 style="margin:0.45rem 0 0.25rem;">AWS &amp; MCP Readiness Blueprint</h3>
+            <div class="price-line">$0 <span class="price-sub">Free Download</span></div>
+            <ul class="check-list">
+              <li>2026–2027 Production AI Cost-Guard Checklist</li>
+              <li>3 Ready-to-Use JSON Schemas (MCP, n8n, FinOps)</li>
+              <li>Open-Core <code>aws-finops-guard</code> CLI + MCP</li>
+            </ul>
+          </div>
+          <a class="btn" href="https://github.com/gabhack/aws-finops-guard" target="_blank" rel="noopener">Clone Free on GitHub →</a>
+        </article>
+
+        <article class="card offer-card">
+          <div>
+            <span class="badge badge-success">WORKFLOWS PACK · BEST FOR OPS</span>
+            <h3 style="margin:0.45rem 0 0.25rem;">15 Production n8n AI Agents Pack</h3>
+            <div class="price-line">$39 <span class="price-sub">one-time · $79 Agency</span></div>
+            <ul class="check-list">
+              <li>15 importable JSON workflows (Clinics, B2B RFQ, Invoices, FinOps, MCP Bridge)</li>
+              <li>1-command <code>docker-compose.yml</code> ($0 self-host)</li>
+              <li>Zero hardcoded keys · Complete setup guide</li>
+            </ul>
+          </div>
+          <a class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Get 15 Workflows ($39) →</a>
+        </article>
+
+        <article class="card offer-card">
+          <div>
+            <span class="badge badge-warning">CLOUD ARCHITECT · HIGH ROI</span>
+            <h3 style="margin:0.45rem 0 0.25rem;">AWS FinOps &amp; LLM Guard Pro</h3>
+            <div class="price-line">$49 <span class="price-sub">one-time · $99 Team</span></div>
+            <ul class="check-list">
+              <li>Unlimited AWS + Bedrock/OpenAI/Gemini local audits</li>
+              <li>Safe Terraform HCL &amp; AWS CLI auto-remediation</li>
+              <li>CI/CD SARIF 2.1.0 export + stdio MCP server</li>
+            </ul>
+          </div>
+          <a class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Unlock Pro Key ($49) →</a>
+        </article>
+
+        <article class="card offer-card featured">
+          <div>
+            <span class="badge badge-brand">ALL-ACCESS FLAGSHIP · SAVE 60%</span>
+            <h3 style="margin:0.45rem 0 0.25rem;">AI Agent Business-in-a-Box</h3>
+            <div class="price-line">$99 <span class="price-sub">one-time · Unlimited Clients</span></div>
+            <ul class="check-list">
+              <li>All <strong>15 n8n AI Workflows</strong> + Docker self-host</li>
+              <li>All <strong>4 MCP Servers</strong> (3 Apify PPE Standby + AWS FinOps)</li>
+              <li>All <strong>12 Cross-Platform Agent Skills</strong> (Claude/Cursor/Codex)</li>
+              <li>Full Commercial White-Label Deployment Rights</li>
+            </ul>
+          </div>
+          <a class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Get Business-in-a-Box ($99) →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRODUCTIZED B2B PILOTS -->
+    <section id="pilots">
+      <div class="section-head">
+        <div>
+          <span class="badge badge-success">PRODUCTIZED B2B SERVICES · FIXED SCOPE</span>
+          <h2>Want Us to Deploy &amp; Connect Your Agent in 7 Days?</h2>
+          <p>Fixed-scope implementation with zero endless retainers. Ideal for clinics, B2B distributors, and AWS engineering teams.</p>
+        </div>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card offer-card">
+          <div>
+            <span class="badge badge-brand">48-HOUR TURNAROUND</span>
+            <h3 style="margin:0.45rem 0 0.25rem;">AWS FinOps &amp; AI Token Architecture Audit</h3>
+            <div class="price-line">$299 <span class="price-sub">fixed scope</span></div>
+            <ul class="check-list">
+              <li>Read-only audit of AWS compute, NAT, RDS, S3 &amp; LLM routing</li>
+              <li>Prioritized Terraform/CLI savings roadmap targeting 25–60% cuts</li>
+              <li>Async executive report + remediation walkthrough</li>
+            </ul>
+          </div>
+          <a class="btn btn-primary" href="mailto:gabhack@gmail.com?subject=TuringTec%2048h%20AWS%20FinOps%20Audit%20($299)&body=Hi%20Gabriel%2C%0A%0AI%20want%20to%20book%20the%2048h%20AWS%20FinOps%20%26%20AI%20Token%20Audit%20($299).%0AEstimated%20monthly%20AWS%2FLLM%20spend%3A%20%0ACountry%3A%20">Book 48h Audit ($299) →</a>
+        </article>
+
+        <article class="card offer-card">
+          <div>
+            <span class="badge badge-success">7-DAY TURNKEY PILOT</span>
+            <h3 style="margin:0.45rem 0 0.25rem;">Vertical B2B AI Agent Pilot (WhatsApp / RFQ / Docs)</h3>
+            <div class="price-line">$690 <span class="price-sub">setup · optional $297/mo care</span></div>
+            <ul class="check-list">
+              <li>Choose 1 vertical: Clinic WhatsApp Booking, Hardware RFQ Quoter, or Invoice Extractor</li>
+              <li>Deployed on your own cloud/n8n/WhatsApp account (BYOK)</li>
+              <li>Includes human hand-off rules, safety guardrails &amp; team training</li>
+            </ul>
+          </div>
+          <a class="btn btn-primary" href="mailto:gabhack@gmail.com?subject=TuringTec%207-Day%20B2B%20AI%20Agent%20Pilot%20($690)&body=Hi%20Gabriel%2C%0A%0AI%20want%20to%20launch%20a%207-day%20B2B%20AI%20Agent%20Pilot.%0AVertical%20(Clinic%20%2F%20Hardware%20RFQ%20%2F%20Invoice%20Docs)%3A%20%0AMonthly%20volume%3A%20%0ACountry%3A%20">Launch 7-Day Pilot ($690) →</a>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <h4>Vertical AI Agent Solutions</h4>
+          <ul>
+            <li><a href="solutions/clinic-whatsapp-voice-agent/">Clinic WhatsApp &amp; Voice Receptionist Agent</a></li>
+            <li><a href="solutions/hardware-b2b-quoting-agent/">B2B Hardware &amp; Wholesale RFQ Quoting Agent</a></li>
+            <li><a href="solutions/invoice-pdf-extraction-agent/">Invoice &amp; PO PDF-to-ERP Extraction Agent</a></li>
+            <li><a href="solutions/aws-finops-guardrails-mcp/">AWS FinOps &amp; LLM Token Guardrails MCP</a></li>
+            <li><a href="solutions/n8n-ai-agent-workflows-pack/">15 Production n8n AI Agent Workflows Pack</a></li>
+            <li><a href="solutions/mcp-agent-business-in-a-box/">AI Agent Business-in-a-Box (White-Label Vault)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Open-Core &amp; Cloud Ecosystem</h4>
+          <ul>
+            <li><a href="https://github.com/gabhack/aws-finops-guard" target="_blank" rel="noopener">aws-finops-guard (GitHub CLI + MCP)</a></li>
+            <li><a href="https://github.com/gabhack/apify-cloud-mcp-suite" target="_blank" rel="noopener">Apify Dual-Mode MCP Server Suite (3 Servers)</a></li>
+            <li><a href="https://gabhack.github.io/cloudcert-lab/" target="_blank" rel="noopener">CloudCert Lab — Multi-Cloud &amp; AI Exam Simulator</a></li>
+            <li><a href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Gumroad Official Store ($19.99–$99)</a></li>
+            <li><a href="https://www.amazon.com/author/gabrieln" target="_blank" rel="noopener">Amazon Kindle Cloud &amp; AI Practice Books</a></li>
+            <li><a href="llms-full.txt">Machine-Readable Reference (llms-full.txt)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>© 2026 TuringTec Agent Studio · Independent AI Engineering &amp; Cloud FinOps Studio.</div>
+    </footer>
+  </main>
+
+  <script src="studio.js"></script>
+</body>
+</html>
