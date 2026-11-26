@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="../../styles.css" />
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TuringTec Agent Studio", "item": "https://gabhack.github.io/turingtec-agent-studio/"}, {"@type": "ListItem", "position": 2, "name": "Invoice & PO PDF-to-ERP Extraction Agent", "item": "https://gabhack.github.io/turingtec-agent-studio/solutions/invoice-pdf-extraction-agent/"}]}, {"@type": "SoftwareApplication", "name": "Invoice & PO PDF-to-ERP Extraction Agent", "description": "Extract vendor details, NIT/Tax IDs, line items, IVA/taxes and math-validated totals from B2B PDF invoices and purchase orders into JSON, Excel, or ERP webhooks.", "applicationCategory": "BusinessApplication", "operatingSystem": "Cross-Platform", "url": "https://gabhack.github.io/turingtec-agent-studio/solutions/invoice-pdf-extraction-agent/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does DocFlow charge per document forever?", "acceptedAnswer": {"@type": "Answer", "text": "With our $39 n8n Pack or $99 Business-in-a-Box, you self-host the agent and pay only your raw LLM token cost (~$0.001-$0.003 per invoice)."}}, {"@type": "Question", "name": "Can it catch supplier math discrepancies automatically?", "acceptedAnswer": {"@type": "Answer", "text": "Yes—deterministic post-extraction checks verify line totals and IVA/VAT sums before pushing to accounting."}}]}]}</script>
 </head>
-<body>
+<body class="has-sticky-cro">
   <div class="accent-bar" aria-hidden="true"></div>
   <header class="topbar">
     <div class="topbar-inner">
@@ -44,6 +44,9 @@
         <span class="badge badge-brand">BACK-OFFICE FINANCE · IDP DOCUMENT AGENT</span>
         <h1>DocFlow B2B: Automated Invoice &amp; Purchase Order PDF-to-ERP Extraction Agent</h1>
         <p>Eliminate manual invoice typing and accounting errors. DocFlow B2B extracts line-by-line structured JSON from vendor invoices and purchase orders, runs deterministic math/tax checks with confidence scoring, and routes verified entries straight to Sheets or your ERP.</p>
+        <div class="quick-answer-box">
+          <strong>Quick ROI Summary:</strong> Self-host with zero monthly SaaS lock-in (<strong>$39 n8n Workflow / $99 Business-in-a-Box</strong>) or launch a turnkey deployment (<strong>$690 7-Day Turnkey Pilot</strong>). Test interactive browser sandboxes free first.
+        </div>
       </div>
       <div class="card" style="background:var(--surface-2); box-shadow:none;">
         <div style="font-size:0.8rem; color:var(--muted); font-weight:700;">SELF-HOSTED KIT</div>
@@ -80,5 +83,16 @@
       <div>Updated 2026-11-26 · TuringTec Agent Studio.</div>
     </footer>
   </main>
+  <aside class="sticky-cro-bar" aria-label="Quick TuringTec Agent Studio actions">
+    <div class="sticky-cro-inner">
+      <div style="font-size:0.82rem;">
+        <strong>Invoice &amp; PO PDF-to-ERP Extraction Agent:</strong> $39 n8n Workflow / $99 Business-in-a-Box · <strong>$690 7-Day Turnkey Pilot</strong>
+      </div>
+      <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+        <a class="btn" href="../../#sandboxes">Try Live Demo ($0)</a>
+        <a class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Get Self-Hosted Kit →</a>
+      </div>
+    </div>
+  </aside>
 </body>
 </html>

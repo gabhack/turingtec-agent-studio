@@ -156,4 +156,33 @@ table.data-table th { color: var(--muted); font-weight: 700; font-size: 0.75rem;
 .footer a { color: var(--muted); text-decoration: none; }
 .footer a:hover { color: var(--brand); text-decoration: underline; }
 
+.sticky-cro-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  background: var(--surface);
+  border-top: 1px solid var(--border-strong);
+  box-shadow: 0 -6px 24px rgba(15, 23, 42, 0.08);
+  padding: 0.65rem 1.25rem;
+}
+.sticky-cro-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+body.has-sticky-cro { padding-bottom: 4.75rem; }
+.quick-answer-box {
+  margin-top: 0.9rem;
+  padding: 0.85rem 1rem;
+  border-left: 4px solid var(--brand);
+  background: var(--surface-2);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.88rem;
+}
 .hidden { display: none !important; }

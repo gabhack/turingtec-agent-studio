@@ -259,7 +259,7 @@ def build_solution_html(sol: dict) -> str:
   <link rel="stylesheet" href="../../styles.css" />
   <script type="application/ld+json">{json.dumps(json_ld, ensure_ascii=False)}</script>
 </head>
-<body>
+<body class="has-sticky-cro">
   <div class="accent-bar" aria-hidden="true"></div>
   <header class="topbar">
     <div class="topbar-inner">
@@ -282,6 +282,9 @@ def build_solution_html(sol: dict) -> str:
         <span class="badge badge-brand">{esc(sol['badge'])}</span>
         <h1>{esc(sol['title'])}</h1>
         <p>{esc(sol['intro'])}</p>
+        <div class="quick-answer-box">
+          <strong>Quick ROI Summary:</strong> Self-host with zero monthly SaaS lock-in (<strong>{esc(sol['price_kit'])}</strong>) or launch a turnkey deployment (<strong>{esc(sol['price_pilot'])}</strong>). Test interactive browser sandboxes free first.
+        </div>
       </div>
       <div class="card" style="background:var(--surface-2); box-shadow:none;">
         <div style="font-size:0.8rem; color:var(--muted); font-weight:700;">SELF-HOSTED KIT</div>
@@ -318,6 +321,17 @@ def build_solution_html(sol: dict) -> str:
       <div>Updated {TODAY} · TuringTec Agent Studio.</div>
     </footer>
   </main>
+  <aside class="sticky-cro-bar" aria-label="Quick TuringTec Agent Studio actions">
+    <div class="sticky-cro-inner">
+      <div style="font-size:0.82rem;">
+        <strong>{esc(sol['short_title'])}:</strong> {esc(sol['price_kit'])} · <strong>{esc(sol['price_pilot'])}</strong>
+      </div>
+      <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+        <a class="btn" href="../../#sandboxes">Try Live Demo ($0)</a>
+        <a class="btn btn-primary" href="{GUMROAD_STORE}" target="_blank" rel="noopener">Get Self-Hosted Kit →</a>
+      </div>
+    </div>
+  </aside>
 </body>
 </html>
 """

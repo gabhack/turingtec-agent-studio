@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="../../styles.css" />
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TuringTec Agent Studio", "item": "https://gabhack.github.io/turingtec-agent-studio/"}, {"@type": "ListItem", "position": 2, "name": "Clinic WhatsApp & Voice Receptionist Agent", "item": "https://gabhack.github.io/turingtec-agent-studio/solutions/clinic-whatsapp-voice-agent/"}]}, {"@type": "SoftwareApplication", "name": "Clinic WhatsApp & Voice Receptionist Agent", "description": "Deploy a self-hosted 24/7 WhatsApp & Voice AI receptionist for medical and dental clinics. Automates triage, Google Calendar booking & 24h/2h anti-no-show reminders with BYOK pricing.", "applicationCategory": "BusinessApplication", "operatingSystem": "Cross-Platform", "url": "https://gabhack.github.io/turingtec-agent-studio/solutions/clinic-whatsapp-voice-agent/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does ClinicFlow AI require paying per-seat SaaS fees?", "acceptedAnswer": {"@type": "Answer", "text": "No. It runs on your own self-hosted Docker n8n instance and Meta WhatsApp Cloud API (roughly $0.003-$0.005 per conversation window)."}}, {"@type": "Question", "name": "Can a human receptionist take over complex patient conversations?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The workflow supports instant human hand-off rules via Chatwoot or direct escalation alerts whenever clinical edge cases arise."}}]}]}</script>
 </head>
-<body>
+<body class="has-sticky-cro">
   <div class="accent-bar" aria-hidden="true"></div>
   <header class="topbar">
     <div class="topbar-inner">
@@ -44,6 +44,9 @@
         <span class="badge badge-brand">HEALTHCARE &amp; CLINICS · 24/7 WHATSAPP + VOICE</span>
         <h1>24/7 AI WhatsApp &amp; Voice Receptionist Agent for Clinics (Anti-No-Show + Calendar Sync)</h1>
         <p>Stop losing after-hours patients and manual front-desk hours. TuringTec&#x27;s self-hosted ClinicFlow AI connects WhatsApp Cloud API, Google Calendar / EMR webhooks, and automated 24h/2h confirmation reminders on a BYOK architecture ($0 SaaS markup).</p>
+        <div class="quick-answer-box">
+          <strong>Quick ROI Summary:</strong> Self-host with zero monthly SaaS lock-in (<strong>$39 n8n Workflow / $99 Business-in-a-Box</strong>) or launch a turnkey deployment (<strong>$690 7-Day Turnkey Pilot</strong>). Test interactive browser sandboxes free first.
+        </div>
       </div>
       <div class="card" style="background:var(--surface-2); box-shadow:none;">
         <div style="font-size:0.8rem; color:var(--muted); font-weight:700;">SELF-HOSTED KIT</div>
@@ -80,5 +83,16 @@
       <div>Updated 2026-11-26 · TuringTec Agent Studio.</div>
     </footer>
   </main>
+  <aside class="sticky-cro-bar" aria-label="Quick TuringTec Agent Studio actions">
+    <div class="sticky-cro-inner">
+      <div style="font-size:0.82rem;">
+        <strong>Clinic WhatsApp &amp; Voice Receptionist Agent:</strong> $39 n8n Workflow / $99 Business-in-a-Box · <strong>$690 7-Day Turnkey Pilot</strong>
+      </div>
+      <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+        <a class="btn" href="../../#sandboxes">Try Live Demo ($0)</a>
+        <a class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Get Self-Hosted Kit →</a>
+      </div>
+    </div>
+  </aside>
 </body>
 </html>

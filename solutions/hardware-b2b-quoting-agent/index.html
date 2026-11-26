@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="../../styles.css" />
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TuringTec Agent Studio", "item": "https://gabhack.github.io/turingtec-agent-studio/"}, {"@type": "ListItem", "position": 2, "name": "B2B Hardware & Wholesale RFQ Quoting Agent", "item": "https://gabhack.github.io/turingtec-agent-studio/solutions/hardware-b2b-quoting-agent/"}]}, {"@type": "SoftwareApplication", "name": "B2B Hardware & Wholesale RFQ Quoting Agent", "description": "Convert messy WhatsApp and email material lists into accurate SKU quotes with tiered volume discounts and margin protection in seconds. Self-hosted n8n + Python agent.", "applicationCategory": "BusinessApplication", "operatingSystem": "Cross-Platform", "url": "https://gabhack.github.io/turingtec-agent-studio/solutions/hardware-b2b-quoting-agent/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How does FerreQuote handle messy abbreviations or typos in WhatsApp messages?", "acceptedAnswer": {"@type": "Answer", "text": "It combines normalized synonym maps with low-cost LLM extraction (BYOK) and confidence thresholds so ambiguous lines are flagged for 1-click sales review."}}, {"@type": "Question", "name": "Can I test it with a real material list right now?", "acceptedAnswer": {"@type": "Answer", "text": "Yes—open our zero-signup browser sandbox on the TuringTec Agent Studio home page and paste any Spanish or English hardware list."}}]}]}</script>
 </head>
-<body>
+<body class="has-sticky-cro">
   <div class="accent-bar" aria-hidden="true"></div>
   <header class="topbar">
     <div class="topbar-inner">
@@ -44,6 +44,9 @@
         <span class="badge badge-brand">B2B HARDWARE &amp; WHOLESALE · AUTOMATED RFQ QUOTING</span>
         <h1>FerreQuote AI: B2B Hardware &amp; Industrial Wholesale RFQ Quoting Agent (WhatsApp/Email to SKU)</h1>
         <p>Wholesale distributors lose deals when manual quoting takes hours. FerreQuote AI parses unstructured WhatsApp texts, Excel sheets, or emails against your real SKU price catalog, applies volume tier margins, and outputs ready-to-send CSV/PDF quotes in seconds.</p>
+        <div class="quick-answer-box">
+          <strong>Quick ROI Summary:</strong> Self-host with zero monthly SaaS lock-in (<strong>$39 n8n Workflow / $99 Business-in-a-Box</strong>) or launch a turnkey deployment (<strong>$690 7-Day Turnkey Pilot</strong>). Test interactive browser sandboxes free first.
+        </div>
       </div>
       <div class="card" style="background:var(--surface-2); box-shadow:none;">
         <div style="font-size:0.8rem; color:var(--muted); font-weight:700;">SELF-HOSTED KIT</div>
@@ -80,5 +83,16 @@
       <div>Updated 2026-11-26 · TuringTec Agent Studio.</div>
     </footer>
   </main>
+  <aside class="sticky-cro-bar" aria-label="Quick TuringTec Agent Studio actions">
+    <div class="sticky-cro-inner">
+      <div style="font-size:0.82rem;">
+        <strong>B2B Hardware &amp; Wholesale RFQ Quoting Agent:</strong> $39 n8n Workflow / $99 Business-in-a-Box · <strong>$690 7-Day Turnkey Pilot</strong>
+      </div>
+      <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+        <a class="btn" href="../../#sandboxes">Try Live Demo ($0)</a>
+        <a class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Get Self-Hosted Kit →</a>
+      </div>
+    </div>
+  </aside>
 </body>
 </html>
