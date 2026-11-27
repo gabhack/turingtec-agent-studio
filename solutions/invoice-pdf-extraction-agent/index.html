@@ -33,6 +33,22 @@
   </script>
   <script src="https://gumroad.com/js/gumroad.js" defer></script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TuringTec Agent Studio", "item": "https://gabhack.github.io/turingtec-agent-studio/"}, {"@type": "ListItem", "position": 2, "name": "Invoice & PO PDF-to-ERP Extractor", "item": "https://gabhack.github.io/turingtec-agent-studio/solutions/invoice-pdf-extraction-agent/"}]}, {"@type": "SoftwareApplication", "name": "Invoice & PO PDF-to-ERP Extractor", "description": "Extract vendor details, Tax IDs/NIT, line items, taxes, and math-validated totals from B2B PDF invoices into clean ERP JSON or Excel with confidence scoring.", "applicationCategory": "BusinessApplication", "operatingSystem": "Cross-Platform", "inLanguage": "en"}, {"@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Do I pay per-document SaaS markups forever?", "acceptedAnswer": {"@type": "Answer", "text": "No. With our $39 n8n Pack or $99 Business-in-a-Box, you host the agent yourself and pay only raw API tokens (~$1 per 500 invoices)."}}, {"@type": "Question", "name": "Can it detect supplier math or tax mismatches automatically?", "acceptedAnswer": {"@type": "Answer", "text": "Yes—every extracted invoice passes through a deterministic arithmetic verifier before entering your accounting system."}}]}]}</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8NYSKT483"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y8NYSKT483');
+    document.addEventListener('click', function(e){
+      var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+      if(!a) return;
+      var h = a.getAttribute('href') || '';
+      if(h.includes('gumroad.com')) gtag('event', 'click_gumroad_checkout', {link_url: h});
+      else if(h.includes('amazon.com')) gtag('event', 'click_kdp_book', {link_url: h});
+      else if(h.includes('udemy.com')) gtag('event', 'click_udemy_course', {link_url: h});
+    });
+  </script>
 </head>
 <body class="ambient-bg">
   <header class="topbar">

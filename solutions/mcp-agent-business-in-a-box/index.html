@@ -33,6 +33,22 @@
   </script>
   <script src="https://gumroad.com/js/gumroad.js" defer></script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TuringTec Agent Studio", "item": "https://gabhack.github.io/turingtec-agent-studio/"}, {"@type": "ListItem", "position": 2, "name": "AI Agent Business-in-a-Box ($99)", "item": "https://gabhack.github.io/turingtec-agent-studio/solutions/mcp-agent-business-in-a-box/"}]}, {"@type": "SoftwareApplication", "name": "AI Agent Business-in-a-Box ($99)", "description": "Launch or white-label B2B AI agents immediately: 15 n8n workflows, 4 production MCP servers, 12 Claude/Cursor/Codex Agent Skills & commercial deployment rights for $99 once.", "applicationCategory": "BusinessApplication", "operatingSystem": "Cross-Platform", "inLanguage": "en"}, {"@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Is this a monthly subscription?", "acceptedAnswer": {"@type": "Answer", "text": "No—pay $99 USD once via Gumroad and keep full source code and commercial deployment rights permanently."}}, {"@type": "Question", "name": "Can I deploy these agents for paying $500–$1,500 B2B clients?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The commercial white-label license is designed specifically for consultants and agencies delivering client projects."}}]}]}</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8NYSKT483"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y8NYSKT483');
+    document.addEventListener('click', function(e){
+      var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+      if(!a) return;
+      var h = a.getAttribute('href') || '';
+      if(h.includes('gumroad.com')) gtag('event', 'click_gumroad_checkout', {link_url: h});
+      else if(h.includes('amazon.com')) gtag('event', 'click_kdp_book', {link_url: h});
+      else if(h.includes('udemy.com')) gtag('event', 'click_udemy_course', {link_url: h});
+    });
+  </script>
 </head>
 <body class="ambient-bg">
   <header class="topbar">

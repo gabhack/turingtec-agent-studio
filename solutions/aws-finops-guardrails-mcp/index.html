@@ -33,6 +33,22 @@
   </script>
   <script src="https://gumroad.com/js/gumroad.js" defer></script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TuringTec Agent Studio", "item": "https://gabhack.github.io/turingtec-agent-studio/"}, {"@type": "ListItem", "position": 2, "name": "AWS FinOps & LLM Guardrails MCP", "item": "https://gabhack.github.io/turingtec-agent-studio/solutions/aws-finops-guardrails-mcp/"}]}, {"@type": "SoftwareApplication", "name": "AWS FinOps & LLM Guardrails MCP", "description": "Audit AWS EBS, NAT Gateways, EIPs, idle RDS, and Bedrock/OpenAI/Gemini token waste locally via CLI or Claude/Cursor MCP Server. Unlock Terraform HCL fixes & CI/CD SARIF.", "applicationCategory": "BusinessApplication", "operatingSystem": "Cross-Platform", "inLanguage": "en"}, {"@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Does aws-finops-guard ever upload my AWS credentials?", "acceptedAnswer": {"@type": "Answer", "text": "Never. Every audit runs 100% locally against your JSON resource snapshots with zero cloud telemetry."}}, {"@type": "Question", "name": "How fast does the $49 Pro License pay for itself?", "acceptedAnswer": {"@type": "Answer", "text": "Removing a single idle NAT Gateway ($32.85/mo) or switching one triage agent to a fast model recovers $49 in days."}}]}]}</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8NYSKT483"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y8NYSKT483');
+    document.addEventListener('click', function(e){
+      var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+      if(!a) return;
+      var h = a.getAttribute('href') || '';
+      if(h.includes('gumroad.com')) gtag('event', 'click_gumroad_checkout', {link_url: h});
+      else if(h.includes('amazon.com')) gtag('event', 'click_kdp_book', {link_url: h});
+      else if(h.includes('udemy.com')) gtag('event', 'click_udemy_course', {link_url: h});
+    });
+  </script>
 </head>
 <body class="ambient-bg">
   <header class="topbar">

@@ -33,6 +33,22 @@
   </script>
   <script src="https://gumroad.com/js/gumroad.js" defer></script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TuringTec Agent Studio", "item": "https://gabhack.github.io/turingtec-agent-studio/"}, {"@type": "ListItem", "position": 2, "name": "Clinic WhatsApp & Voice Receptionist", "item": "https://gabhack.github.io/turingtec-agent-studio/solutions/clinic-whatsapp-voice-agent/"}]}, {"@type": "SoftwareApplication", "name": "Clinic WhatsApp & Voice Receptionist", "description": "Deploy a self-hosted 24/7 WhatsApp & Voice AI receptionist for medical and dental clinics. Automates intake, Google Calendar booking & 24h/2h anti-no-show reminders with zero SaaS lock-in.", "applicationCategory": "BusinessApplication", "operatingSystem": "Cross-Platform", "inLanguage": "en"}, {"@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Does ClinicFlow charge per-seat SaaS fees every month?", "acceptedAnswer": {"@type": "Answer", "text": "No. You own the n8n workflow and run it on your own Docker host with Meta's official WhatsApp Cloud API—zero per-agent seat markups."}}, {"@type": "Question", "name": "What happens if a patient reports a medical urgency?", "acceptedAnswer": {"@type": "Answer", "text": "Deterministic escalation rules immediately pause the bot and notify your on-duty staff via Chatwoot or WhatsApp alert."}}]}]}</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8NYSKT483"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y8NYSKT483');
+    document.addEventListener('click', function(e){
+      var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+      if(!a) return;
+      var h = a.getAttribute('href') || '';
+      if(h.includes('gumroad.com')) gtag('event', 'click_gumroad_checkout', {link_url: h});
+      else if(h.includes('amazon.com')) gtag('event', 'click_kdp_book', {link_url: h});
+      else if(h.includes('udemy.com')) gtag('event', 'click_udemy_course', {link_url: h});
+    });
+  </script>
 </head>
 <body class="ambient-bg">
   <header class="topbar">

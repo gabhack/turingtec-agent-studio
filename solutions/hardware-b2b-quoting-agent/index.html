@@ -33,6 +33,22 @@
   </script>
   <script src="https://gumroad.com/js/gumroad.js" defer></script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TuringTec Agent Studio", "item": "https://gabhack.github.io/turingtec-agent-studio/"}, {"@type": "ListItem", "position": 2, "name": "B2B Hardware & Wholesale RFQ Quoter", "item": "https://gabhack.github.io/turingtec-agent-studio/solutions/hardware-b2b-quoting-agent/"}]}, {"@type": "SoftwareApplication", "name": "B2B Hardware & Wholesale RFQ Quoter", "description": "Turn messy WhatsApp and email material lists into accurate SKU quotes with tiered volume discounts and margin protection in 45 seconds. Self-hosted n8n + Python agent.", "applicationCategory": "BusinessApplication", "operatingSystem": "Cross-Platform", "inLanguage": "en"}, {"@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "How does it handle typos and local trade abbreviations?", "acceptedAnswer": {"@type": "Answer", "text": "It combines normalized synonym dictionaries with low-cost LLM extraction (BYOK) and routes low-confidence lines to 1-click sales confirmation."}}, {"@type": "Question", "name": "Can I test it with a real bill of materials right now?", "acceptedAnswer": {"@type": "Answer", "text": "Yes—open our live zero-signup sandbox on the main page and paste any hardware or industrial material list."}}]}]}</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8NYSKT483"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y8NYSKT483');
+    document.addEventListener('click', function(e){
+      var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+      if(!a) return;
+      var h = a.getAttribute('href') || '';
+      if(h.includes('gumroad.com')) gtag('event', 'click_gumroad_checkout', {link_url: h});
+      else if(h.includes('amazon.com')) gtag('event', 'click_kdp_book', {link_url: h});
+      else if(h.includes('udemy.com')) gtag('event', 'click_udemy_course', {link_url: h});
+    });
+  </script>
 </head>
 <body class="ambient-bg">
   <header class="topbar">

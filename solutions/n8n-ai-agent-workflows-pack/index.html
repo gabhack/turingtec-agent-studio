@@ -33,6 +33,22 @@
   </script>
   <script src="https://gumroad.com/js/gumroad.js" defer></script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TuringTec Agent Studio", "item": "https://gabhack.github.io/turingtec-agent-studio/"}, {"@type": "ListItem", "position": 2, "name": "15 Production n8n AI Agent Workflows", "item": "https://gabhack.github.io/turingtec-agent-studio/solutions/n8n-ai-agent-workflows-pack/"}]}, {"@type": "SoftwareApplication", "name": "15 Production n8n AI Agent Workflows", "description": "Skip broken 4,000-file dumps. Download 15 clean, BYOK n8n AI Agent JSON workflows + 1-command Docker Compose self-host stack for $39 one-time.", "applicationCategory": "BusinessApplication", "operatingSystem": "Cross-Platform", "inLanguage": "en"}, {"@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Do I need a paid n8n Cloud subscription?", "acceptedAnswer": {"@type": "Answer", "text": "No. The included docker-compose.yml runs n8n self-hosted at $0 software licensing cost on your laptop or a ~$15/mo VPS."}}, {"@type": "Question", "name": "Why 15 curated workflows instead of 4,000 scraped files?", "acceptedAnswer": {"@type": "Answer", "text": "Massive scraped dumps are full of deprecated nodes and broken auth. These 15 workflows follow a clean uniform BYOK schema built for real B2B ops."}}]}]}</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8NYSKT483"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y8NYSKT483');
+    document.addEventListener('click', function(e){
+      var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+      if(!a) return;
+      var h = a.getAttribute('href') || '';
+      if(h.includes('gumroad.com')) gtag('event', 'click_gumroad_checkout', {link_url: h});
+      else if(h.includes('amazon.com')) gtag('event', 'click_kdp_book', {link_url: h});
+      else if(h.includes('udemy.com')) gtag('event', 'click_udemy_course', {link_url: h});
+    });
+  </script>
 </head>
 <body class="ambient-bg">
   <header class="topbar">

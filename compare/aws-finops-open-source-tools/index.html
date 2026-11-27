@@ -33,6 +33,22 @@
   </script>
   <script src="https://gumroad.com/js/gumroad.js" defer></script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TuringTec Agent Studio", "item": "https://gabhack.github.io/turingtec-agent-studio/"}, {"@type": "ListItem", "position": 2, "name": "AWS FinOps Tools + Waste Estimator", "item": "https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/"}]}, {"@type": "WebApplication", "name": "AWS FinOps Open-Source Tools Compared (2026–2027): aws-finops-guard vs Infracost vs OpenCost", "description": "Compare aws-finops-guard, Infracost, OpenCost, and AWS Cost Explorer—plus an interactive AWS & LLM Monthly Waste Estimator showing payback in hours.", "applicationCategory": "BusinessApplication", "inLanguage": "en"}, {"@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "How is aws-finops-guard different from Infracost and OpenCost?", "acceptedAnswer": {"@type": "Answer", "text": "Infracost focuses on Terraform PR estimates and OpenCost on Kubernetes; aws-finops-guard audits both live AWS waste AND LLM token routing locally or inside Claude/Cursor via MCP."}}, {"@type": "Question", "name": "What does the $49 Pro License unlock?", "acceptedAnswer": {"@type": "Answer", "text": "Copy-paste Terraform HCL remediation patches, AWS CLI commands, and CI/CD SARIF 2.1.0 gates."}}]}]}</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8NYSKT483"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y8NYSKT483');
+    document.addEventListener('click', function(e){
+      var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+      if(!a) return;
+      var h = a.getAttribute('href') || '';
+      if(h.includes('gumroad.com')) gtag('event', 'click_gumroad_checkout', {link_url: h});
+      else if(h.includes('amazon.com')) gtag('event', 'click_kdp_book', {link_url: h});
+      else if(h.includes('udemy.com')) gtag('event', 'click_udemy_course', {link_url: h});
+    });
+  </script>
 </head>
 <body class="ambient-bg">
   <header class="topbar">

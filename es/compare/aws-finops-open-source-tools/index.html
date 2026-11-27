@@ -33,6 +33,22 @@
   </script>
   <script src="https://gumroad.com/js/gumroad.js" defer></script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TuringTec Agent Studio", "item": "https://gabhack.github.io/turingtec-agent-studio/es/"}, {"@type": "ListItem", "position": 2, "name": "Comparativa FinOps AWS + Calculadora", "item": "https://gabhack.github.io/turingtec-agent-studio/es/compare/aws-finops-open-source-tools/"}]}, {"@type": "WebApplication", "name": "Herramientas Open-Source FinOps AWS (2026–2027): aws-finops-guard vs Infracost vs OpenCost", "description": "Compara aws-finops-guard, Infracost, OpenCost y AWS Cost Explorer con calculadora interactiva de desperdicio AWS + LLM y retorno en horas.", "applicationCategory": "BusinessApplication", "inLanguage": "es"}, {"@type": "FAQPage", "inLanguage": "es", "mainEntity": [{"@type": "Question", "name": "¿En qué se diferencia aws-finops-guard de Infracost y OpenCost?", "acceptedAnswer": {"@type": "Answer", "text": "Infracost estima cambios en PRs y OpenCost mide Kubernetes; aws-finops-guard audita desperdicio real AWS más sobrepago de tokens IA directamente desde terminal o Claude/Cursor vía MCP."}}, {"@type": "Question", "name": "¿Qué desbloquea la Licencia Pro de $49?", "acceptedAnswer": {"@type": "Answer", "text": "Parches seguros en Terraform HCL, comandos AWS CLI listos y reportes SARIF 2.1.0 para bloquear despliegues costosos en CI/CD."}}]}]}</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8NYSKT483"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y8NYSKT483');
+    document.addEventListener('click', function(e){
+      var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+      if(!a) return;
+      var h = a.getAttribute('href') || '';
+      if(h.includes('gumroad.com')) gtag('event', 'click_gumroad_checkout', {link_url: h});
+      else if(h.includes('amazon.com')) gtag('event', 'click_kdp_book', {link_url: h});
+      else if(h.includes('udemy.com')) gtag('event', 'click_udemy_course', {link_url: h});
+    });
+  </script>
 </head>
 <body class="ambient-bg">
   <header class="topbar">
