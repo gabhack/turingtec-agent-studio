@@ -1,13 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://gabhack.github.io/turingtec-agent-studio/</loc><lastmod>2026-11-26</lastmod><priority>1.0</priority></url>
-  <url><loc>https://gabhack.github.io/turingtec-agent-studio/solutions/clinic-whatsapp-voice-agent/</loc><lastmod>2026-11-26</lastmod><priority>0.9</priority></url>
-  <url><loc>https://gabhack.github.io/turingtec-agent-studio/solutions/hardware-b2b-quoting-agent/</loc><lastmod>2026-11-26</lastmod><priority>0.9</priority></url>
-  <url><loc>https://gabhack.github.io/turingtec-agent-studio/solutions/invoice-pdf-extraction-agent/</loc><lastmod>2026-11-26</lastmod><priority>0.9</priority></url>
-  <url><loc>https://gabhack.github.io/turingtec-agent-studio/solutions/aws-finops-guardrails-mcp/</loc><lastmod>2026-11-26</lastmod><priority>0.9</priority></url>
-  <url><loc>https://gabhack.github.io/turingtec-agent-studio/solutions/n8n-ai-agent-workflows-pack/</loc><lastmod>2026-11-26</lastmod><priority>0.9</priority></url>
-  <url><loc>https://gabhack.github.io/turingtec-agent-studio/solutions/mcp-agent-business-in-a-box/</loc><lastmod>2026-11-26</lastmod><priority>0.9</priority></url>
-  <url><loc>https://gabhack.github.io/turingtec-agent-studio/compare/n8n-vs-zapier-vs-make-calculator/</loc><lastmod>2026-11-26</lastmod><priority>0.9</priority></url>
-  <url><loc>https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/</loc><lastmod>2026-11-26</lastmod><priority>0.9</priority></url>
-  <url><loc>https://gabhack.github.io/turingtec-agent-studio/compare/clinic-whatsapp-ai-bot-roi/</loc><lastmod>2026-11-26</lastmod><priority>0.9</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/es/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/solutions/clinic-whatsapp-voice-agent/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/solutions/clinic-whatsapp-voice-agent/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/solutions/clinic-whatsapp-voice-agent/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/solutions/clinic-whatsapp-voice-agent/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/es/solutions/clinic-whatsapp-voice-agent/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/solutions/clinic-whatsapp-voice-agent/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/solutions/clinic-whatsapp-voice-agent/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/solutions/clinic-whatsapp-voice-agent/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/solutions/hardware-b2b-quoting-agent/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/solutions/hardware-b2b-quoting-agent/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/solutions/hardware-b2b-quoting-agent/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/solutions/hardware-b2b-quoting-agent/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/es/solutions/hardware-b2b-quoting-agent/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/solutions/hardware-b2b-quoting-agent/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/solutions/hardware-b2b-quoting-agent/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/solutions/hardware-b2b-quoting-agent/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/solutions/invoice-pdf-extraction-agent/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/solutions/invoice-pdf-extraction-agent/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/solutions/invoice-pdf-extraction-agent/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/solutions/invoice-pdf-extraction-agent/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/es/solutions/invoice-pdf-extraction-agent/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/solutions/invoice-pdf-extraction-agent/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/solutions/invoice-pdf-extraction-agent/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/solutions/invoice-pdf-extraction-agent/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/solutions/aws-finops-guardrails-mcp/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/solutions/aws-finops-guardrails-mcp/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/solutions/aws-finops-guardrails-mcp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/solutions/aws-finops-guardrails-mcp/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/es/solutions/aws-finops-guardrails-mcp/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/solutions/aws-finops-guardrails-mcp/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/solutions/aws-finops-guardrails-mcp/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/solutions/aws-finops-guardrails-mcp/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/solutions/n8n-ai-agent-workflows-pack/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/solutions/n8n-ai-agent-workflows-pack/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/solutions/n8n-ai-agent-workflows-pack/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/solutions/n8n-ai-agent-workflows-pack/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/es/solutions/n8n-ai-agent-workflows-pack/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/solutions/n8n-ai-agent-workflows-pack/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/solutions/n8n-ai-agent-workflows-pack/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/solutions/n8n-ai-agent-workflows-pack/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/solutions/mcp-agent-business-in-a-box/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/solutions/mcp-agent-business-in-a-box/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/solutions/mcp-agent-business-in-a-box/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/solutions/mcp-agent-business-in-a-box/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/es/solutions/mcp-agent-business-in-a-box/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/solutions/mcp-agent-business-in-a-box/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/solutions/mcp-agent-business-in-a-box/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/solutions/mcp-agent-business-in-a-box/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/compare/n8n-vs-zapier-vs-make-calculator/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/compare/n8n-vs-zapier-vs-make-calculator/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/compare/n8n-vs-zapier-vs-make-calculator/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/compare/n8n-vs-zapier-vs-make-calculator/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/es/compare/n8n-vs-zapier-vs-make-calculator/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/compare/n8n-vs-zapier-vs-make-calculator/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/compare/n8n-vs-zapier-vs-make-calculator/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/compare/n8n-vs-zapier-vs-make-calculator/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/compare/aws-finops-open-source-tools/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/es/compare/aws-finops-open-source-tools/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/compare/aws-finops-open-source-tools/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/compare/clinic-whatsapp-ai-bot-roi/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/compare/clinic-whatsapp-ai-bot-roi/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/compare/clinic-whatsapp-ai-bot-roi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/compare/clinic-whatsapp-ai-bot-roi/" />
+  </url>
+  <url>
+    <loc>https://gabhack.github.io/turingtec-agent-studio/es/compare/clinic-whatsapp-ai-bot-roi/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/compare/clinic-whatsapp-ai-bot-roi/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/compare/clinic-whatsapp-ai-bot-roi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/compare/clinic-whatsapp-ai-bot-roi/" />
+  </url>
 </urlset>

@@ -1,178 +1,173 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AWS FinOps Open-Source Tools Compared (2026–2027): aws-finops-guard vs Infracost vs OpenCost vs Cost Explorer | TuringTec Agent Studio</title>
-  <meta name="description" content="Objective comparison of aws-finops-guard, Infracost, OpenCost, and AWS Cost Explorer—plus an interactive AWS &amp; LLM Monthly Waste Estimator showing annual waste and payback in hours." />
+  <title>AWS FinOps Open-Source Tools Compared (2026–2027): aws-finops-guard vs Infracost vs OpenCost | TuringTec Agent Studio</title>
+  <meta name="description" content="Compare aws-finops-guard, Infracost, OpenCost, and AWS Cost Explorer—plus an interactive AWS &amp; LLM Monthly Waste Estimator showing payback in hours." />
   <link rel="canonical" href="https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="AWS FinOps Open-Source Tools Compared (2026–2027): aws-finops-guard vs Infracost vs OpenCost vs Cost Explorer" />
-  <meta property="og:description" content="Objective comparison of aws-finops-guard, Infracost, OpenCost, and AWS Cost Explorer—plus an interactive AWS &amp; LLM Monthly Waste Estimator showing annual waste and payback in hours." />
+  <link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/" />
+  <link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/compare/aws-finops-open-source-tools/" />
+  <link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="AWS FinOps Open-Source Tools Compared (2026–2027): aws-finops-guard vs Infracost vs OpenCost | TuringTec Agent Studio" />
+  <meta property="og:description" content="Compare aws-finops-guard, Infracost, OpenCost, and AWS Cost Explorer—plus an interactive AWS &amp; LLM Monthly Waste Estimator showing payback in hours." />
   <meta property="og:url" content="https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/" />
-  <meta property="og:image" content="https://gabhack.github.io/turingtec-agent-studio/assets/og/compare-aws-finops-open-source-tools.png" />
+  <meta property="og:image" content="https://gabhack.github.io/turingtec-agent-studio/assets/og/aws-finops-open-source-tools.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://gabhack.github.io/turingtec-agent-studio/assets/og/compare-aws-finops-open-source-tools.png" />
+  <meta name="twitter:title" content="AWS FinOps Open-Source Tools Compared (2026–2027): aws-finops-guard vs Infracost vs OpenCost | TuringTec Agent Studio" />
+  <meta name="twitter:description" content="Compare aws-finops-guard, Infracost, OpenCost, and AWS Cost Explorer—plus an interactive AWS &amp; LLM Monthly Waste Estimator showing payback in hours." />
+  <meta name="twitter:image" content="https://gabhack.github.io/turingtec-agent-studio/assets/og/aws-finops-open-source-tools.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../styles.css" />
+  <script>
+    (function(){
+      var t = localStorage.getItem("tt_theme_v2");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
   <script src="https://gumroad.com/js/gumroad.js" defer></script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TuringTec Agent Studio", "item": "https://gabhack.github.io/turingtec-agent-studio/"}, {"@type": "ListItem", "position": 2, "name": "AWS FinOps Open-Source Tools + Waste Estimator", "item": "https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/"}]}, {"@type": "SoftwareApplication", "name": "AWS FinOps Open-Source Tools + Waste Estimator", "description": "Objective comparison of aws-finops-guard, Infracost, OpenCost, and AWS Cost Explorer—plus an interactive AWS & LLM Monthly Waste Estimator showing annual waste and payback in hours.", "applicationCategory": "BusinessApplication", "operatingSystem": "Web, Cross-Platform", "url": "https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How is aws-finops-guard different from Infracost and OpenCost?", "acceptedAnswer": {"@type": "Answer", "text": "Infracost shines at PR-time Terraform estimates and OpenCost specializes in Kubernetes. aws-finops-guard fills the gap for live AWS waste (idle NAT, gp2->gp3, unattached EBS, idle RDS) AND AI/LLM token overspending, natively inside your terminal or Claude/Cursor via MCP."}}, {"@type": "Question", "name": "Does aws-finops-guard ever upload my AWS credentials or billing data?", "acceptedAnswer": {"@type": "Answer", "text": "No. It runs 100% locally against your JSON snapshots or read-only local context with zero third-party SaaS telemetry."}}, {"@type": "Question", "name": "What does the $49 Pro License unlock?", "acceptedAnswer": {"@type": "Answer", "text": "Safe Terraform HCL remediation patches, copy-paste AWS CLI commands, and CI/CD SARIF 2.1.0 output so your pipeline blocks wasteful deploys automatically."}}]}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TuringTec Agent Studio", "item": "https://gabhack.github.io/turingtec-agent-studio/"}, {"@type": "ListItem", "position": 2, "name": "AWS FinOps Tools + Waste Estimator", "item": "https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/"}]}, {"@type": "WebApplication", "name": "AWS FinOps Open-Source Tools Compared (2026–2027): aws-finops-guard vs Infracost vs OpenCost", "description": "Compare aws-finops-guard, Infracost, OpenCost, and AWS Cost Explorer—plus an interactive AWS & LLM Monthly Waste Estimator showing payback in hours.", "applicationCategory": "BusinessApplication", "inLanguage": "en"}, {"@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "How is aws-finops-guard different from Infracost and OpenCost?", "acceptedAnswer": {"@type": "Answer", "text": "Infracost focuses on Terraform PR estimates and OpenCost on Kubernetes; aws-finops-guard audits both live AWS waste AND LLM token routing locally or inside Claude/Cursor via MCP."}}, {"@type": "Question", "name": "What does the $49 Pro License unlock?", "acceptedAnswer": {"@type": "Answer", "text": "Copy-paste Terraform HCL remediation patches, AWS CLI commands, and CI/CD SARIF 2.1.0 gates."}}]}]}</script>
 </head>
-<body class="has-sticky-cro">
-  <div class="accent-bar" aria-hidden="true"></div>
+<body class="ambient-bg">
   <header class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="../../">
-        <div class="brand-mark">TT</div>
-        <div><div class="brand-title">TuringTec Agent Studio</div><div class="brand-sub">AWS FinOps Open-Source Tools + Waste Estimator</div></div>
+        <span class="brand-mark">TT</span>
+        <span class="brand-title">TuringTec</span>
+        <span class="brand-live"><span class="live-dot"></span>4 live sandboxes</span>
       </a>
-      <div class="nav-actions">
-        <a class="btn" href="../../#sandboxes">Live Sandboxes ($0)</a>
-        <a class="btn" href="../../#kits">Agent Kits ($39–$99)</a>
-        <a class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Open Gumroad Store →</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="nav-link" href="../../#sandboxes">Live Demos</a>
+        <a class="nav-link" href="../../#solutions">Solutions</a>
+        <a class="nav-link" href="../../#calculators">ROI Calculators</a>
+        <a class="nav-link" href="../../#pricing">Pricing</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <a class="lang-opt active" href="./" hreflang="en" rel="alternate" data-lang="en">EN</a>
+          <a class="lang-opt " href="../../es/compare/aws-finops-open-source-tools/" hreflang="es" rel="alternate" data-lang="es">ES</a>
+        </div>
+        <button id="btnTheme" class="btn btn-icon" type="button" aria-label="Toggle theme">Light</button>
+        <a class="btn btn-primary btn-sm" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Open Store</a>
       </div>
     </div>
   </header>
   <main class="container">
-    <div style="font-size:0.82rem; color:var(--muted); margin-bottom:0.85rem;">
-      <a href="../../" style="color:var(--brand); text-decoration:none;">TuringTec Agent Studio</a> / Compare / AWS FinOps Open-Source Tools + Waste Estimator
+    <div style="font-size:0.82rem; color:var(--muted); margin-bottom:1rem;">
+      <a href="../../" style="color:var(--brand-hover); text-decoration:none;">TuringTec Agent Studio</a> / AWS FinOps Tools + Waste Estimator
     </div>
-    <section class="card hero" style="grid-template-columns: 1fr;">
-      <div>
-        <span class="badge badge-brand">CLOUD &amp; LLM FINOPS BENCHMARK · OPEN-SOURCE COMPARISON</span>
-        <h1>AWS FinOps Open-Source Tools Compared (2026–2027): aws-finops-guard vs Infracost vs OpenCost vs Cost Explorer</h1>
-        <p>Modern cloud teams leak 25–40% of their budget across unattached EBS volumes, idle NAT Gateways, legacy gp2 storage, and unrouted LLM API calls. Compare the top FinOps tools objectively below and estimate your exact recoverable AWS + AI waste.</p>
-        <div class="quick-answer-box">
-          <strong>Bottom Line Up Front (BLUF):</strong> Infracost estimates pre-deploy Terraform PR costs, OpenCost tracks Kubernetes pods, and AWS Cost Explorer shows historical spend—while aws-finops-guard audits live AWS + LLM token waste locally via CLI or Claude/Cursor MCP Server and outputs ready-to-apply Terraform HCL fixes.
-        </div>
+    <section style="padding:0.25rem 0 1rem; max-width:860px;">
+      <div class="status-pill"><span class="live-dot"></span><span>Cloud &amp; LLM FinOps Benchmark</span></div>
+      <h1 style="margin:0 0 0.8rem; font-size:clamp(1.85rem, 3.6vw, 2.75rem);">AWS FinOps Open-Source Tools Compared (2026–2027): aws-finops-guard vs Infracost vs OpenCost</h1>
+      <p class="hero-lead" style="max-width:74ch;">Cloud teams routinely leak 25–40% of spend across idle NAT Gateways, legacy gp2 storage, oversized non-prod RDS, and overpaying LLM prompts. Compare the tools and model your recoverable budget below.</p>
+      <div class="guarantee-bar" style="margin-top:1rem;">
+        <div><strong>Bottom Line:</strong> <span style="color:var(--muted); font-size:0.9rem;">Infracost estimates pre-deploy Terraform PR diffs and OpenCost tracks Kubernetes pods, while aws-finops-guard audits live AWS + LLM token waste locally via CLI or Claude/Cursor MCP Server and outputs safe Terraform HCL fixes.</span></div>
       </div>
     </section>
-    
-    <section class="card" style="margin-top:1.2rem;">
-      <span class="badge badge-warning">INTERACTIVE AWS &amp; LLM WASTE ESTIMATOR</span>
-      <h2 style="margin:0.4rem 0 0.9rem; font-size:1.25rem;">Estimate Your Annual Cloud + AI Waste &amp; Payback Period in Hours</h2>
+
+    <section class="card section" style="margin-top:1.5rem;">
+      <span class="tag tag-gold">LIVE AWS + LLM WASTE ESTIMATOR</span>
+      <h2 style="margin:0.5rem 0 1rem; font-size:1.3rem;">Interactive AWS + LLM Waste &amp; Payback Estimator</h2>
       <div class="sandbox-grid">
         <div>
           <div class="calc-slider-group">
-            <div class="calc-slider-head">
-              <label for="finAwsSpend"><strong>Monthly AWS Spend (USD)</strong></label>
-              <span class="calc-slider-val" id="finAwsSpendVal">$8,000 / mo</span>
-            </div>
+            <div class="calc-slider-head"><label for="finAwsSpend"><strong>Monthly AWS Spend (USD)</strong></label><span class="calc-slider-val" id="finAwsSpendVal">$8,000</span></div>
             <input id="finAwsSpend" type="range" min="1000" max="50000" step="500" value="8000" />
           </div>
           <div class="calc-slider-group">
-            <div class="calc-slider-head">
-              <label for="finWastePct"><strong>Est. Idle / Oversized AWS Waste (%)</strong></label>
-              <span class="calc-slider-val" id="finWastePctVal">28%</span>
-            </div>
+            <div class="calc-slider-head"><label for="finWastePct"><strong>Est. Idle / Oversized AWS Waste (%)</strong></label><span class="calc-slider-val" id="finWastePctVal">28%</span></div>
             <input id="finWastePct" type="range" min="10" max="45" step="1" value="28" />
           </div>
           <div class="calc-slider-group">
-            <div class="calc-slider-head">
-              <label for="finLlmSpend"><strong>Monthly LLM API Spend (OpenAI / Bedrock / Gemini)</strong></label>
-              <span class="calc-slider-val" id="finLlmSpendVal">$2,400 / mo</span>
-            </div>
+            <div class="calc-slider-head"><label for="finLlmSpend"><strong>Monthly LLM API Spend (OpenAI / Bedrock / Gemini)</strong></label><span class="calc-slider-val" id="finLlmSpendVal">$2,400</span></div>
             <input id="finLlmSpend" type="range" min="200" max="20000" step="200" value="2400" />
           </div>
         </div>
         <div>
           <div class="calc-result-grid">
-            <div class="calc-stat danger">
-              <div class="calc-stat-label">Monthly Waste</div>
-              <div class="calc-stat-val" id="finMonthlyWaste">$3,080/mo</div>
-            </div>
-            <div class="calc-stat danger">
-              <div class="calc-stat-label">Annual Waste</div>
-              <div class="calc-stat-val" id="finAnnualWaste">$36,960/yr</div>
-            </div>
-            <div class="calc-stat highlight">
-              <div class="calc-stat-label">$49 Pro Payback</div>
-              <div class="calc-stat-val" id="finPaybackHrs">11.5 hrs</div>
-            </div>
+            <div class="calc-stat danger"><div class="calc-stat-label">Monthly Waste</div><div class="calc-stat-val" id="finMonthlyWaste">$3,080</div></div>
+            <div class="calc-stat danger"><div class="calc-stat-label">Annual Waste</div><div class="calc-stat-val" id="finAnnualWaste">$36,960</div></div>
+            <div class="calc-stat highlight"><div class="calc-stat-label">$49 Payback</div><div class="calc-stat-val" id="finPaybackHrs">11.5 h</div></div>
           </div>
-          <div class="card" style="background:var(--surface-2); box-shadow:none; padding:1rem;">
-            <div style="font-size:0.82rem; font-weight:700; color:var(--warning);">RECOVERABLE CLOUD + LLM BUDGET</div>
-            <div id="finSummaryLine" style="font-size:1.3rem; font-weight:800; color:var(--fg); margin:0.2rem 0;">$2,240/mo AWS + $840/mo LLM Routing = $36,960/yr</div>
-            <div id="finPaybackDetail" style="font-size:0.84rem; color:var(--muted); margin-bottom:0.85rem;">The $49 Pro License pays back in 11.5 hours; the $99 Business-in-a-Box pays back in 23.1 hours.</div>
+          <div class="calc-stat highlight" style="padding:1.05rem;">
+            <div class="calc-stat-label" style="color:var(--live);">Recoverable Cloud + AI Budget</div>
+            <div id="finSummaryLine" style="font-size:1.25rem; font-weight:800; margin:0.25rem 0;"></div>
+            <div id="finPaybackDetail" style="font-size:0.84rem; color:var(--muted); margin-bottom:0.85rem;"></div>
             <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-              <a class="btn" href="https://github.com/gabhack/aws-finops-guard" target="_blank" rel="noopener">Clone Open-Core CLI ($0) →</a>
-              <a id="finCtaPro" class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Recover $36,960/yr — Unlock Pro ($49) →</a>
-              <a class="btn" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Business-in-a-Box ($99)</a>
+              <a class="btn" href="https://github.com/gabhack/aws-finops-guard" target="_blank" rel="noopener">Clone Free CLI ($0)</a>
+              <a id="finCtaPro" class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Unlock Pro ($49)</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="card" style="margin-top:1.2rem; overflow-x:auto;">
-      <h2 style="margin:0 0 0.5rem; font-size:1.2rem;">Side-by-Side Comparison Matrix (2026–2027)</h2>
-      <table class="data-table"><thead><tr><th>Tool</th><th>Primary Scope</th><th>Live AWS + LLM Token Audit</th><th>Claude / Cursor MCP Server</th><th>Terraform HCL Auto-Fix</th><th>Pricing / License</th></tr></thead><tbody><tr><td><strong>aws-finops-guard</strong></td><td>Live AWS Waste + LLM API Routing</td><td>✓ Yes (EBS, NAT, RDS, S3, Bedrock/OpenAI/Gemini)</td><td>✓ Native stdio JSON-RPC 2.0</td><td>✓ Pro ($49 one-time) + SARIF 2.1.0</td><td>MIT Open-Core ($0) / $49 Pro</td></tr><tr><td><strong>Infracost</strong></td><td>Pre-Deploy Terraform PR Cost Diffs</td><td>Pre-deploy IaC only (No LLM audit)</td><td>✗ No native FinOps MCP</td><td>✗ Estimates only (No auto-patch)</td><td>Apache 2.0 / Cloud SaaS ($50+/seat)</td></tr><tr><td><strong>OpenCost</strong></td><td>Kubernetes Pod &amp; Cluster Costing</td><td>K8s clusters only (No LLM audit)</td><td>✗ No</td><td>✗ Reporting only</td><td>CNCF Apache 2.0 ($0)</td></tr><tr><td><strong>AWS Cost Explorer</strong></td><td>Historical AWS Billing Console</td><td>AWS billing only (No LLM prompt audit)</td><td>✗ No</td><td>✗ Manual console changes</td><td>Free UI / $0.01 per API request</td></tr></tbody></table>
+    <section class="card section" style="margin-top:1.75rem;">
+      <h2 style="margin:0 0 0.6rem; font-size:1.25rem;">Side-by-Side Comparison</h2>
+      <div style="overflow-x:auto;"><table class="data-table"><thead><tr><th>Tool</th><th>Primary Scope</th><th>Live AWS + LLM Audit</th><th>MCP Server</th><th>Terraform Auto-Fix</th><th>License</th></tr></thead><tbody><tr><td><strong>aws-finops-guard</strong></td><td>Live AWS Waste + LLM Routing</td><td>✓ Yes (EBS, NAT, RDS, LLMs)</td><td>✓ Native stdio MCP</td><td>✓ Pro ($49) + SARIF</td><td>MIT ($0) / $49 Pro</td></tr><tr><td><strong>Infracost</strong></td><td>Pre-Deploy Terraform PR Diffs</td><td>Pre-deploy IaC only</td><td>✗ No</td><td>✗ Estimates only</td><td>Apache 2.0 / SaaS</td></tr><tr><td><strong>OpenCost</strong></td><td>Kubernetes Pod Costing</td><td>K8s clusters only</td><td>✗ No</td><td>✗ Reporting only</td><td>CNCF Apache 2.0</td></tr><tr><td><strong>AWS Cost Explorer</strong></td><td>Historical Billing Console</td><td>AWS billing only</td><td>✗ No</td><td>✗ Manual changes</td><td>Free UI / $0.01 API</td></tr></tbody></table></div>
     </section>
-    <section class="card" style="margin-top:1.2rem;">
-      <h2 style="margin:0 0 0.35rem; font-size:1.15rem;">Frequently Asked Questions</h2>
-      <div style='margin-top:0.85rem;'><h3 style='margin:0 0 0.25rem; font-size:1rem;'>How is aws-finops-guard different from Infracost and OpenCost?</h3><p style='margin:0; color:var(--muted); font-size:0.9rem;'>Infracost shines at PR-time Terraform estimates and OpenCost specializes in Kubernetes. aws-finops-guard fills the gap for live AWS waste (idle NAT, gp2-&gt;gp3, unattached EBS, idle RDS) AND AI/LLM token overspending, natively inside your terminal or Claude/Cursor via MCP.</p></div><div style='margin-top:0.85rem;'><h3 style='margin:0 0 0.25rem; font-size:1rem;'>Does aws-finops-guard ever upload my AWS credentials or billing data?</h3><p style='margin:0; color:var(--muted); font-size:0.9rem;'>No. It runs 100% locally against your JSON snapshots or read-only local context with zero third-party SaaS telemetry.</p></div><div style='margin-top:0.85rem;'><h3 style='margin:0 0 0.25rem; font-size:1rem;'>What does the $49 Pro License unlock?</h3><p style='margin:0; color:var(--muted); font-size:0.9rem;'>Safe Terraform HCL remediation patches, copy-paste AWS CLI commands, and CI/CD SARIF 2.1.0 output so your pipeline blocks wasteful deploys automatically.</p></div>
+    <section class="section">
+      <div class="section-header"><h2>Frequently Asked Questions</h2></div>
+      <div class="faq-list"><details class="faq-item"><summary>How is aws-finops-guard different from Infracost and OpenCost?</summary><p>Infracost focuses on Terraform PR estimates and OpenCost on Kubernetes; aws-finops-guard audits both live AWS waste AND LLM token routing locally or inside Claude/Cursor via MCP.</p></details><details class="faq-item"><summary>What does the $49 Pro License unlock?</summary><p>Copy-paste Terraform HCL remediation patches, AWS CLI commands, and CI/CD SARIF 2.1.0 gates.</p></details></div>
     </section>
     <footer class="footer">
       <div class="footer-grid">
-        <div><h4>Other ROI Calculators &amp; Comparisons</h4><ul><li><a href="../n8n-vs-zapier-vs-make-calculator/">n8n vs Zapier vs Make Cost Calculator</a></li><li><a href="../clinic-whatsapp-ai-bot-roi/">Clinic WhatsApp AI Bot ROI Calculator</a></li></ul></div>
-        <div><h4>Vertical AI Agent Solutions</h4><ul><li><a href="../../solutions/clinic-whatsapp-voice-agent/">Clinic WhatsApp &amp; Voice Receptionist Agent</a></li><li><a href="../../solutions/hardware-b2b-quoting-agent/">B2B Hardware &amp; Wholesale RFQ Quoting Agent</a></li><li><a href="../../solutions/invoice-pdf-extraction-agent/">Invoice &amp; PO PDF-to-ERP Extraction Agent</a></li><li><a href="../../solutions/aws-finops-guardrails-mcp/">AWS FinOps &amp; LLM Token Guardrails MCP</a></li><li><a href="../../solutions/n8n-ai-agent-workflows-pack/">15 Production n8n AI Agent Workflows Pack</a></li><li><a href="../../solutions/mcp-agent-business-in-a-box/">AI Agent Business-in-a-Box (All-Access Vault)</a></li></ul></div>
         <div>
-          <h4>Quick Links</h4>
+          <h4>Vertical AI Agent Solutions</h4>
+          <ul><li><a href="../../solutions/clinic-whatsapp-voice-agent/">Clinic WhatsApp &amp; Voice Receptionist</a></li><li><a href="../../solutions/hardware-b2b-quoting-agent/">B2B Hardware &amp; Wholesale RFQ Quoter</a></li><li><a href="../../solutions/invoice-pdf-extraction-agent/">Invoice &amp; PO PDF-to-ERP Extractor</a></li><li><a href="../../solutions/aws-finops-guardrails-mcp/">AWS FinOps &amp; LLM Guardrails MCP</a></li><li><a href="../../solutions/n8n-ai-agent-workflows-pack/">15 Production n8n AI Agent Workflows</a></li><li><a href="../../solutions/mcp-agent-business-in-a-box/">AI Agent Business-in-a-Box ($99)</a></li></ul>
+        </div>
+        <div>
+          <h4>Interactive ROI Calculators</h4>
+          <ul><li><a href="../../compare/n8n-vs-zapier-vs-make-calculator/">n8n vs Zapier vs Make Cost Calculator</a></li><li><a href="../../compare/aws-finops-open-source-tools/">AWS FinOps Tools + Waste Estimator</a></li><li><a href="../../compare/clinic-whatsapp-ai-bot-roi/">Clinic WhatsApp AI ROI Calculator</a></li></ul>
+        </div>
+        <div>
+          <h4>Open-Core & Cloud Ecosystem</h4>
           <ul>
-            <li><a href="../../">TuringTec Agent Studio Home (4 Live Sandboxes)</a></li>
-            <li><a href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Gumroad Store ($39–$99 Kits)</a></li>
-            <li><a href="https://github.com/gabhack/aws-finops-guard" target="_blank" rel="noopener">aws-finops-guard Open-Core CLI + MCP</a></li>
-            <li><a href="https://gabhack.github.io/cloudcert-lab/" target="_blank" rel="noopener">CloudCert Lab Multi-Cloud Simulator</a></li>
+            <li><a href="https://github.com/gabhack/aws-finops-guard" target="_blank" rel="noopener">aws-finops-guard (GitHub CLI + MCP)</a></li>
+            <li><a href="https://github.com/gabhack/apify-cloud-mcp-suite" target="_blank" rel="noopener">Apify Dual-Mode MCP Suite (3 Servers)</a></li>
+            <li><a href="https://gabhack.github.io/cloudcert-lab/" target="_blank" rel="noopener">CloudCert Lab — Multi-Cloud Exam Simulator</a></li>
+            <li><a href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Official Gumroad Store ($39–$99)</a></li>
+            <li><a href="../../llms-full.txt">llms-full.txt (AI Reference)</a></li>
           </ul>
         </div>
       </div>
-      <div>Updated 2026-11-26 · TuringTec Agent Studio.</div>
+      <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:0.5rem;">
+        <span>© 2026 TuringTec Agent Studio · B2B AI Agents, MCP Servers & AWS FinOps.</span>
+        <span>Updated 2026-11-27</span>
+      </div>
     </footer>
   </main>
-  <aside class="sticky-cro-bar" aria-label="Quick TuringTec Agent Studio actions">
-    <div class="sticky-cro-inner">
-      <div style="font-size:0.82rem;"><strong>aws-finops-guard: Free Open-Core CLI + MCP · $49 Pro Terraform Auto-Fix · $99 Business-in-a-Box</strong></div>
-      <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-        <a class="btn" href="../../#sandboxes">Try Live Demos ($0)</a>
-        <a class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Unlock Pro License ($49) →</a>
-      </div>
-    </div>
-  </aside>
+  <script src="../../studio.js"></script>
   <script>
     (function() {
-      var awsEl = document.getElementById('finAwsSpend');
-      var pctEl = document.getElementById('finWastePct');
-      var llmEl = document.getElementById('finLlmSpend');
+      var isEs = false;
+      var awsEl = document.getElementById('finAwsSpend'), pctEl = document.getElementById('finWastePct'), llmEl = document.getElementById('finLlmSpend');
       if (!awsEl || !pctEl || !llmEl) return;
       function fmt(n) { return '$' + Math.round(n).toLocaleString('en-US'); }
       function update() {
-        var aws = Number(awsEl.value) || 8000;
-        var pct = Number(pctEl.value) || 28;
-        var llm = Number(llmEl.value) || 2400;
-        var awsWaste = Math.round(aws * (pct / 100));
-        var llmWaste = Math.round(llm * 0.35);
-        var moWaste = awsWaste + llmWaste;
-        var yrWaste = moWaste * 12;
-        var hrs49 = Math.max(0.5, 49 / Math.max(0.1, moWaste / 720));
-        var hrs99 = Math.max(1.0, 99 / Math.max(0.1, moWaste / 720));
-        document.getElementById('finAwsSpendVal').textContent = fmt(aws) + ' / mo';
+        var aws = Number(awsEl.value) || 8000, pct = Number(pctEl.value) || 28, llm = Number(llmEl.value) || 2400;
+        var aW = Math.round(aws * (pct / 100)), lW = Math.round(llm * 0.35), mo = aW + lW, yr = mo * 12;
+        var hrs = Math.max(0.5, 49 / Math.max(0.1, mo / 720));
+        document.getElementById('finAwsSpendVal').textContent = fmt(aws) + (isEs ? '/mes' : '/mo');
         document.getElementById('finWastePctVal').textContent = pct + '%';
-        document.getElementById('finLlmSpendVal').textContent = fmt(llm) + ' / mo';
-        document.getElementById('finMonthlyWaste').textContent = fmt(moWaste) + '/mo';
-        document.getElementById('finAnnualWaste').textContent = fmt(yrWaste) + '/yr';
-        document.getElementById('finPaybackHrs').textContent = hrs49.toFixed(1) + ' hrs';
-        document.getElementById('finSummaryLine').textContent = fmt(awsWaste) + '/mo AWS + ' + fmt(llmWaste) + '/mo LLM Routing = ' + fmt(yrWaste) + '/yr';
-        document.getElementById('finPaybackDetail').textContent = 'The $49 Pro License pays back in ' + hrs49.toFixed(1) + ' hours; the $99 Business-in-a-Box pays back in ' + hrs99.toFixed(1) + ' hours.';
-        document.getElementById('finCtaPro').textContent = 'Recover ' + fmt(yrWaste) + '/yr — Unlock Pro ($49) →';
+        document.getElementById('finLlmSpendVal').textContent = fmt(llm) + (isEs ? '/mes' : '/mo');
+        document.getElementById('finMonthlyWaste').textContent = fmt(mo) + (isEs ? '/mes' : '/mo');
+        document.getElementById('finAnnualWaste').textContent = fmt(yr) + (isEs ? '/año' : '/yr');
+        document.getElementById('finPaybackHrs').textContent = hrs.toFixed(1) + ' h';
+        document.getElementById('finSummaryLine').textContent = fmt(aW) + ' AWS + ' + fmt(lW) + ' LLM = ' + fmt(yr) + (isEs ? '/año' : '/yr');
+        document.getElementById('finPaybackDetail').textContent = isEs
+          ? 'La licencia Pro ($49) se paga sola en ' + hrs.toFixed(1) + ' horas de operación.'
+          : 'The $49 Pro License pays back in ' + hrs.toFixed(1) + ' hours of cloud operation.';
+        document.getElementById('finCtaPro').textContent = isEs
+          ? 'Recupera ' + fmt(yr) + '/año — Desbloquear Pro ($49) →'
+          : 'Recover ' + fmt(yr) + '/yr — Unlock Pro ($49) →';
       }
-      [awsEl, pctEl, llmEl].forEach(function(el) {
-        el.addEventListener('input', update);
-        el.addEventListener('change', update);
-      });
-      update();
+      [awsEl, pctEl, llmEl].forEach(function(e){ e.addEventListener('input', update); }); update();
     })();</script>
 </body>
 </html>

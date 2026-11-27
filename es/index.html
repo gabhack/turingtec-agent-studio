@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TuringTec Agent Studio — Agentes IA B2B en Producción, Servidores MCP y FinOps AWS (2026–2027)</title>
+  <meta name="description" content="Prueba 4 demos en vivo sin registro: recepcionista WhatsApp para clínicas, cotizador B2B ferretero, extractor de facturas PDF a ERP y auditor FinOps AWS. Kits self-hosted $39–$99 o piloto en 7 días." />
+  <link rel="canonical" href="https://gabhack.github.io/turingtec-agent-studio/es/" />
+  <link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/" />
+  <link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/" />
+  <link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:title" content="TuringTec Agent Studio — Agentes IA B2B en Producción, Servidores MCP y FinOps AWS (2026–2027)" />
+  <meta property="og:description" content="Prueba 4 demos en vivo sin registro: recepcionista WhatsApp para clínicas, cotizador B2B ferretero, extractor de facturas PDF a ERP y auditor FinOps AWS. Kits self-hosted $39–$99 o piloto en 7 días." />
+  <meta property="og:url" content="https://gabhack.github.io/turingtec-agent-studio/es/" />
+  <meta property="og:image" content="https://gabhack.github.io/turingtec-agent-studio/assets/og/es-home.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TuringTec Agent Studio — Agentes IA B2B en Producción, Servidores MCP y FinOps AWS (2026–2027)" />
+  <meta name="twitter:description" content="Prueba 4 demos en vivo sin registro: recepcionista WhatsApp para clínicas, cotizador B2B ferretero, extractor de facturas PDF a ERP y auditor FinOps AWS. Kits self-hosted $39–$99 o piloto en 7 días." />
+  <meta name="twitter:image" content="https://gabhack.github.io/turingtec-agent-studio/assets/og/es-home.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script>
+    (function(){
+      var t = localStorage.getItem("tt_theme_v2");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <script src="https://gumroad.com/js/gumroad.js" defer></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://gabhack.github.io/turingtec-agent-studio/#organization", "name": "TuringTec Agent Studio", "url": "https://gabhack.github.io/turingtec-agent-studio/", "sameAs": ["https://github.com/gabhack/aws-finops-guard", "https://github.com/gabhack/apify-cloud-mcp-suite", "https://gabhack.github.io/cloudcert-lab/"]}, {"@type": "WebPage", "@id": "https://gabhack.github.io/turingtec-agent-studio/es/#webpage", "url": "https://gabhack.github.io/turingtec-agent-studio/es/", "name": "TuringTec Agent Studio — Agentes IA B2B en Producción, Servidores MCP y FinOps AWS (2026–2027)", "description": "Prueba 4 demos en vivo sin registro: recepcionista WhatsApp para clínicas, cotizador B2B ferretero, extractor de facturas PDF a ERP y auditor FinOps AWS. Kits self-hosted $39–$99 o piloto en 7 días.", "inLanguage": "es", "isPartOf": {"@id": "https://gabhack.github.io/turingtec-agent-studio/#organization"}}, {"@type": "SoftwareApplication", "name": "TuringTec AI Agent Business-in-a-Box", "applicationCategory": "BusinessApplication", "operatingSystem": "Cross-Platform", "inLanguage": "es", "offers": [{"@type": "Offer", "name": "15 Production n8n AI Workflows", "price": "39", "priceCurrency": "USD", "url": "https://gabbler407.gumroad.com/"}, {"@type": "Offer", "name": "AWS FinOps & LLM Guard Pro", "price": "49", "priceCurrency": "USD", "url": "https://gabbler407.gumroad.com/"}, {"@type": "Offer", "name": "AI Agent Business-in-a-Box", "price": "99", "priceCurrency": "USD", "url": "https://gabbler407.gumroad.com/"}]}]}</script>
+</head>
+<body class="ambient-bg">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="./">
+        <span class="brand-mark">TT</span>
+        <span class="brand-title">TuringTec</span>
+        <span class="brand-live"><span class="live-dot"></span>4 demos en vivo</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a class="nav-link" href="./#sandboxes">Demos en Vivo</a>
+        <a class="nav-link" href="./#solutions">Soluciones</a>
+        <a class="nav-link" href="./#calculators">Calculadoras ROI</a>
+        <a class="nav-link" href="./#pricing">Precios</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <a class="lang-opt " href="../" hreflang="en" rel="alternate" data-lang="en">EN</a>
+          <a class="lang-opt active" href="./" hreflang="es" rel="alternate" data-lang="es">ES</a>
+        </div>
+        <button id="btnTheme" class="btn btn-icon" type="button" aria-label="Toggle theme">Claro</button>
+        <a class="btn btn-primary btn-sm" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Ver Tienda</a>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero-split">
+      <div>
+        <div class="status-pill">
+          <span class="live-dot"></span>
+          <span>Agentes IA en Producción · Código Propio · Cero Amarres SaaS</span>
+        </div>
+        <h1>Agentes IA que cotizan, agendan, causan facturas y podan tu AWS 24/7.</h1>
+        <p class="hero-lead">
+          Convierte chats de WhatsApp en citas confirmadas, listas ferreteras en cotizaciones PDF en 45 segundos, facturas PDF en registros listos para tu ERP y desperdicio de AWS en ahorro real—sobre tu propio Docker n8n, ERP y MCP.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#sandboxes">Probar 4 Demos en Vivo ($0)</a>
+          <a class="btn" href="#pricing">Ver Kits ($39–$99) y Pilotos</a>
+        </div>
+        <div class="hero-micro">
+          <span>✓ Sin registro para las demos</span>
+          <span>✓ 100% BYOK y código propio</span>
+          <span>✓ Entrega instantánea Gumroad</span>
+        </div>
+      </div>
+
+      <aside class="trace-card" aria-label="Live execution preview">
+        <div class="trace-top">
+          <span class="trace-dots"><i></i><i></i><i></i></span>
+          <span class="mono">turingtec-agent-runtime · v2.6</span>
+          <span class="tag tag-live">● En línea</span>
+        </div>
+        <div class="trace-steps">
+          <div class="trace-step">
+            <div>
+              <strong>1. Entrada Omnicanal (WhatsApp / PDF / AWS)</strong>
+              <span>Lista de obra, factura proveedor, cita médica o snapshot AWS</span>
+            </div>
+            <span class="trace-ms">42 ms</span>
+          </div>
+          <div class="trace-step">
+            <div>
+              <strong>2. Validación Determinística y Guardrails</strong>
+              <span>Cruce SKU + verificación aritmética IVA + escalamiento humano</span>
+            </div>
+            <span class="trace-ms">118 ms</span>
+          </div>
+          <div class="trace-step">
+            <div>
+              <strong>3. Ejecución en Producción (ERP / Agenda / Terraform)</strong>
+              <span>Cotización CSV, asiento ERP validado o parche HCL listo</span>
+            </div>
+            <span class="trace-ms">210 ms</span>
+          </div>
+        </div>
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border); font-size:0.8rem;">
+          <span class="mono" style="color:var(--muted);">Latencia total: 370 ms · Costo SaaS: $0/mes</span>
+          <a href="#sandboxes" style="color:var(--brand-hover); font-weight:600; text-decoration:none;">Ejecutar abajo ↓</a>
+        </div>
+      </aside>
+    </section>
+
+    <!-- PROOF STRIP -->
+    <section class="proof-strip" aria-label="Key operational outcomes">
+      <div class="proof-cell">
+        <div class="proof-num">45 s</div>
+        <div class="proof-label">Cotizaciones B2B de 40 ítems (antes 3–4 horas manuales)</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-num">24/7</div>
+        <div class="proof-label">Cero chats ni llamadas perdidas en clínicas con WhatsApp IA</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-num">99.4%</div>
+        <div class="proof-label">Exactitud validada matemáticamente en facturas PDF a ERP</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-num">25–60%</div>
+        <div class="proof-label">Recorte típico en gasto ocioso AWS y tokens LLM vía MCP</div>
+      </div>
+    </section>
+
+    <!-- 4 LIVE INTERACTIVE SANDBOXES -->
+    <section id="sandboxes" class="section">
+      <div class="section-header">
+        <div class="section-kicker">// PRUEBA ANTES DE COMPRAR · $0 COSTO DE API</div>
+        <h2>4 Sandboxes Interactivos de Agentes IA en tu Navegador</h2>
+        <p>Edita los textos reales o mueve los parámetros para ver resultados determinísticos, JSON limpio y ahorros al instante.</p>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab-btn active" data-tab="ferrequote" type="button">1. FerreQuote AI (Cotizador B2B)</button>
+        <button class="tab-btn" data-tab="docflow" type="button">2. DocFlow B2B (Facturas PDF)</button>
+        <button class="tab-btn" data-tab="finops" type="button">3. AWS & LLM FinOps Guard</button>
+        <button class="tab-btn" data-tab="clinicflow" type="button">4. ClinicFlow AI (Clínicas WhatsApp)</button>
+      </div>
+
+      <!-- TAB 1 -->
+      <div id="tab-ferrequote" class="card sandbox-panel">
+        <div class="sandbox-grid">
+          <div>
+            <label class="field-label" for="fqInput">Pega un pedido desordenado por WhatsApp o correo:</label>
+            <textarea id="fqInput" rows="7">Hola necesito cotizar urgente para obra norte:
+40 bultos cemento gris 50kg
+12 tubos pvc sanitario 2 pulgadas
+5 cajas tornillo drywall 1 pulg
+3 galones pintura vinilo blanco tipo 1
+20 ladrillos estructurales</textarea>
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:0.75rem;">
+              <button id="btnFqRun" class="btn btn-primary" type="button">Cotizar al Instante</button>
+              <button id="btnFqExport" class="btn" type="button">Descargar CSV</button>
+              <a class="btn btn-ghost" href="solutions/hardware-b2b-quoting-agent/">Ver solución completa →</a>
+            </div>
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+              <span class="tag tag-live" id="fqStatus">Cruce SKU listo</span>
+              <strong id="fqTotal" class="tabular" style="font-size:1.15rem;">$0.00 USD</strong>
+            </div>
+            <div id="fqTableWrap"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2 -->
+      <div id="tab-docflow" class="card sandbox-panel hidden">
+        <div class="sandbox-grid">
+          <div>
+            <label class="field-label" for="dfInput">Texto crudo de Factura u Orden de Compra (edítalo libremente):</label>
+            <textarea id="dfInput" rows="8">FACTURA ELECTRONICA DE VENTA No. FE-2026-8841
+PROVEEDOR: DISTRIBUIDORA INDUSTRIAL ANDINA S.A.S.
+NIT: 901.442.819-3
+FECHA: 2026-11-26
+ITEM 1: VALVULA BOLA BRONCE 1 PULG | CANT: 25 | UNIT: 14.50 | SUB: 362.50
+ITEM 2: CABLE THHN CALIBRE 12 ROLLO 100M | CANT: 6 | UNIT: 48.00 | SUB: 288.00
+SUBTOTAL: 650.50
+IVA 19%: 123.60
+TOTAL A PAGAR USD: 774.10</textarea>
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:0.75rem;">
+              <button id="btnDfRun" class="btn btn-primary" type="button">Extraer JSON ERP</button>
+              <button id="btnDfDownload" class="btn" type="button">Descargar JSON</button>
+              <a class="btn btn-ghost" href="solutions/invoice-pdf-extraction-agent/">Ver solución completa →</a>
+            </div>
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
+              <span class="tag tag-live" id="dfScore">Confianza: 99.4% · Sumas Validadas ✓</span>
+              <span class="tag tag-brand">0 Discrepancias</span>
+            </div>
+            <pre id="dfOutput" class="code-out"></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3 -->
+      <div id="tab-finops" class="card sandbox-panel hidden">
+        <div class="sandbox-grid">
+          <div style="display:flex; flex-direction:column; gap:0.8rem;">
+            <div>
+              <label class="field-label" for="finEbs">Almacenamiento EBS huérfano + gp2 legado (GB)</label>
+              <input id="finEbs" type="number" min="0" value="750" />
+            </div>
+            <div>
+              <label class="field-label" for="finNat">Tráfico mensual NAT Gateway sin S3 Endpoint (GB)</label>
+              <input id="finNat" type="number" min="0" value="1800" />
+            </div>
+            <div>
+              <label class="field-label" for="finRds">Gasto mensual en RDS no productivo ocioso (USD)</label>
+              <input id="finRds" type="number" min="0" value="292" />
+            </div>
+            <div>
+              <label class="field-label" for="finLlm">Millones de tokens/mes en modelo premium para triaje/extracción</label>
+              <input id="finLlm" type="number" min="0" value="45" />
+            </div>
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+              <a class="btn btn-primary" href="https://github.com/gabhack/aws-finops-guard" target="_blank" rel="noopener">Clonar CLI + MCP Gratis</a>
+              <a class="btn" href="solutions/aws-finops-guardrails-mcp/">Parches Terraform ($49)</a>
+            </div>
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.55rem;">
+              <span class="tag tag-danger">GASTO EVITABLE DETECTADO</span>
+              <strong id="finTotal" class="tabular" style="font-size:1.2rem; color:var(--danger);">$0 / mo</strong>
+            </div>
+            <pre id="finOutput" class="code-out"></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 4 -->
+      <div id="tab-clinicflow" class="card sandbox-panel hidden">
+        <div class="sandbox-grid">
+          <div>
+            <div class="field-label">Haz clic en un mensaje de paciente para probar la respuesta 24/7:</div>
+            <div style="display:flex; gap:0.45rem; flex-wrap:wrap; margin-bottom:0.75rem;">
+              <button class="btn btn-sm" data-clinic-msg="book" type="button">📅 Agendar limpieza viernes</button>
+              <button class="btn btn-sm" data-clinic-msg="price" type="button">💳 Precio y seguros</button>
+              <button class="btn btn-sm" data-clinic-msg="reschedule" type="button">🔄 Reprogramar cita</button>
+              <button class="btn btn-sm" data-clinic-msg="confirm" type="button">✅ Confirmar 24h</button>
+            </div>
+            <div id="clinicChat" class="chat-box"></div>
+          </div>
+          <div>
+            <span class="tag tag-live">CALCULADORA ROI ANTI-INASISTENCIAS</span>
+            <h3 style="margin:0.5rem 0 0.65rem; font-size:1.05rem;">¿Cuánto dinero recupera tu clínica al mes?</h3>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.65rem;">
+              <div>
+                <label class="field-label" for="clMissed">Citas/leads perdidos al mes</label>
+                <input id="clMissed" type="number" min="1" value="18" />
+              </div>
+              <div>
+                <label class="field-label" for="clTicket">Ticket promedio consulta (USD)</label>
+                <input id="clTicket" type="number" min="10" value="65" />
+              </div>
+            </div>
+            <div id="clinicRoi" class="card" style="margin-top:0.85rem; background:var(--surface-2); box-shadow:none; padding:1rem;"></div>
+            <div style="margin-top:0.8rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
+              <a class="btn btn-primary" href="solutions/clinic-whatsapp-voice-agent/">Ver arquitectura clínica →</a>
+              <a class="btn" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Pack n8n ($39)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEFORE VS AFTER -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-kicker">// POR QUÉ CAMBIAN LOS EQUIPOS DE OPERACIONES</div>
+        <h2>Operación manual o agencias de $3,500/mes vs. Agentes propios</h2>
+      </div>
+      <div class="compare-two">
+        <div class="compare-col">
+          <span class="tag tag-danger">Modelo Tradicional / SaaS Rígido</span>
+          <ul class="compare-list">
+            <li><span>✕</span><div><strong>3–4 horas por cotización B2B:</strong> los compradores cierran con el competidor que responde primero.</div></li>
+            <li><span>✕</span><div><strong>Pacientes perdidos de noche:</strong> 20–30% de leads por WhatsApp se enfrían antes de abrir agenda.</div></li>
+            <li><span>✕</span><div><strong>$300–$1,500/mes por asiento y tarea:</strong> Zapier y CRMs te castigan por crecer.</div></li>
+            <li><span>✕</span><div><strong>Cajas negras sin código:</strong> si cancelas la mensualidad, pierdes tus flujos y datos.</div></li>
+          </ul>
+        </div>
+        <div class="compare-col after">
+          <span class="tag tag-live">Con TuringTec Agent Studio (BYOK)</span>
+          <ul class="compare-list">
+            <li><span>✓</span><div><strong>Respuestas y cotizaciones en <45 s:</strong> cruza SKUs, valida márgenes e IVA antes de responder.</div></li>
+            <li><span>✓</span><div><strong>Self-hosted en tu Docker o AWS:</strong> $0 en licencias por asiento y control total de tus datos.</div></li>
+            <li><span>✓</span><div><strong>Pago único ($39–$99) o Piloto fijo ($690):</strong> retorno de inversión medible desde la primera semana.</div></li>
+            <li><span>✓</span><div><strong>Propiedad 100% del código fuente:</strong> n8n JSONs, servidores MCP, Terraform HCL y skills incluidos.</div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 SOLUTIONS BENTO -->
+    <section id="solutions" class="section">
+      <div class="section-header">
+        <div class="section-kicker">// SOLUCIONES VERTICALES Y SERVIDORES MCP</div>
+        <h2>Arquitecturas listas para desplegar en tu industria</h2>
+        <p>Cada solución incluye especificación técnica, flujos BYOK sin llaves quemadas y opción self-hosted o piloto llave en mano.</p>
+      </div>
+      <div class="bento-grid"><a class="bento-card" href="solutions/clinic-whatsapp-voice-agent/">
+          <div>
+            <span class="tag tag-brand">Clínicas · WhatsApp y Voz 24/7</span>
+            <h3>Recepcionista IA WhatsApp para Clínicas</h3>
+            <p>Atiende pacientes 24/7 por WhatsApp y voz, agenda directo en Google Calendar y recorta ausencias con confirmaciones automáticas.</p>
+          </div>
+          <div class="bento-foot">
+            <span>$39 Pack n8n</span>
+            <span>Ver arquitectura →</span>
+          </div>
+        </a><a class="bento-card" href="solutions/hardware-b2b-quoting-agent/">
+          <div>
+            <span class="tag tag-brand">Ferreterías y Mayoristas · Cotizador B2B</span>
+            <h3>Cotizador B2B Ferretero por WhatsApp</h3>
+            <p>Interpreta listas de materiales por WhatsApp, cruza SKU y descuentos por volumen y genera la cotización lista para cerrar venta.</p>
+          </div>
+          <div class="bento-foot">
+            <span>$39 Pack n8n</span>
+            <span>Ver arquitectura →</span>
+          </div>
+        </a><a class="bento-card" href="solutions/invoice-pdf-extraction-agent/">
+          <div>
+            <span class="tag tag-brand">Contabilidad y Finanzas · PDF a ERP</span>
+            <h3>Extractor de Facturas PDF a ERP</h3>
+            <p>Lee facturas PDF sin plantillas rígidas, verifica sumas e IVA automáticamente y alerta discrepancias antes de causar en tu ERP.</p>
+          </div>
+          <div class="bento-foot">
+            <span>$39 Pack n8n</span>
+            <span>Ver arquitectura →</span>
+          </div>
+        </a><a class="bento-card" href="solutions/aws-finops-guardrails-mcp/">
+          <div>
+            <span class="tag tag-brand">FinOps AWS · CLI Open-Core + MCP</span>
+            <h3>Auditor FinOps AWS y Tokens LLM (MCP)</h3>
+            <p>Detecta EBS huérfanos, NAT Gateways costosos, RDS sobredimensionados y desperdicio en tokens LLM desde tu terminal o Claude/Cursor.</p>
+          </div>
+          <div class="bento-foot">
+            <span>$0 Open-Core</span>
+            <span>Ver arquitectura →</span>
+          </div>
+        </a><a class="bento-card" href="solutions/n8n-ai-agent-workflows-pack/">
+          <div>
+            <span class="tag tag-brand">15 Flujos JSON + Docker Self-Host</span>
+            <h3>Pack 15 Workflows n8n de Agentes IA</h3>
+            <p>15 flujos JSON n8n listos para importar + Docker Compose ($0 licencia software) para lanzar automatizaciones B2B hoy mismo.</p>
+          </div>
+          <div class="bento-foot">
+            <span>$39 Estándar</span>
+            <span>Ver arquitectura →</span>
+          </div>
+        </a><a class="bento-card" href="solutions/mcp-agent-business-in-a-box/">
+          <div>
+            <span class="tag tag-brand">Bóveda Completa · Ahorra 60%</span>
+            <h3>AI Agent Business-in-a-Box ($99)</h3>
+            <p>Todo en un solo paquete: 15 flujos n8n, 4 servidores MCP, 12 Agent Skills y licencia comercial para desplegar a clientes ilimitados.</p>
+          </div>
+          <div class="bento-foot">
+            <span>$99 Pago Único (Valor $245+)</span>
+            <span>Ver arquitectura →</span>
+          </div>
+        </a></div>
+    </section>
+
+    <!-- 3 ROI CALCULATORS -->
+    <section id="calculators" class="section">
+      <div class="section-header">
+        <div class="section-kicker">// NÚMEROS REALES ANTES DE INVERTIR</div>
+        <h2>3 Calculadoras Interactivas de Ahorro y Retorno</h2>
+      </div>
+      <div class="bento-grid"><a class="bento-card" href="compare/n8n-vs-zapier-vs-make-calculator/">
+          <div>
+            <span class="tag tag-live">Calculadora ROI · n8n vs Zapier vs Make</span>
+            <h3>Calculadora n8n vs Zapier vs Make</h3>
+            <p>Con 10,000 ejecuciones mensuales de 6 pasos (60,000 tareas/mes), Zapier cuesta ~$5,748/año y Make ~$1,284/año—mientras que n8n self-hosted en Docker corre ...</p>
+          </div>
+          <div class="bento-foot">
+            <span>Abrir calculadora</span>
+            <span>→</span>
+          </div>
+        </a><a class="bento-card" href="compare/aws-finops-open-source-tools/">
+          <div>
+            <span class="tag tag-live">Comparativa FinOps AWS y Tokens LLM</span>
+            <h3>Comparativa FinOps AWS + Calculadora</h3>
+            <p>Infracost estima costos en PRs de Terraform y OpenCost mide pods Kubernetes, mientras que aws-finops-guard audita desperdicio real de AWS y tokens LLM en l...</p>
+          </div>
+          <div class="bento-foot">
+            <span>Abrir calculadora</span>
+            <span>→</span>
+          </div>
+        </a><a class="bento-card" href="compare/clinic-whatsapp-ai-bot-roi/">
+          <div>
+            <span class="tag tag-live">ROI Clínicas · WhatsApp IA Anti-Inasistencias</span>
+            <h3>Calculadora ROI WhatsApp para Clínicas</h3>
+            <p>Una clínica con 300 consultas mensuales por WhatsApp, 22% de inasistencias/leads perdidos y ticket promedio de $75 USD pierde ~$4,950/mes. Recuperar el 65%...</p>
+          </div>
+          <div class="bento-foot">
+            <span>Abrir calculadora</span>
+            <span>→</span>
+          </div>
+        </a></div>
+    </section>
+
+    <!-- PRICING & PILOTS -->
+    <section id="pricing" class="section">
+      <div class="section-header">
+        <div class="section-kicker">// PRECIOS TRANSPARENTES · PAGO ÚNICO SIN SUSCRIPCIONES</div>
+        <h2>Arranca con kits self-hosted ($39–$99) o delega el piloto en 7 días</h2>
+        <p>Anclado frente a $3,500+/mes de nómina o agencias tradicionales. Entrega inmediata vía Gumroad (Merchant of Record global).</p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card">
+          <div>
+            <span class="tag tag-brand">Kits Individuales</span>
+            <h3 style="margin:0.55rem 0 0.2rem;">15 Workflows n8n o AWS FinOps Pro</h3>
+            <div class="price-amount">$39–$49 <span>pago único</span></div>
+            <ul class="check-list">
+              <li><strong>15 Flujos n8n ($39):</strong> Clínicas, Cotizador B2B, Facturas, FinOps + Docker.</li>
+              <li><strong>AWS FinOps Guard Pro ($49):</strong> Parches Terraform HCL + SARIF CI/CD + MCP.</li>
+              <li>Código 100% BYOK sin rentas mensuales.</li>
+            </ul>
+          </div>
+          <a class="btn" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Elegir Kit en Gumroad →</a>
+        </article>
+
+        <article class="price-card featured">
+          <div>
+            <span class="tag tag-gold">Más Elegido · Ahorra 60%</span>
+            <h3 style="margin:0.55rem 0 0.2rem;">AI Agent Business-in-a-Box</h3>
+            <div class="price-amount">$99 <span>pago único · valor $245+</span></div>
+            <ul class="check-list">
+              <li><strong>Los 15 Workflows n8n</strong> + Docker Compose</li>
+              <li><strong>4 Servidores MCP</strong> (3 Apify PPE + AWS FinOps)</li>
+              <li><strong>12 Agent Skills</strong> (Claude, Cursor, Codex, Antigravity)</li>
+              <li><strong>Licencia Comercial White-Label</strong> para clientes ilimitados.</li>
+            </ul>
+          </div>
+          <a class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Desbloquear Bóveda ($99) →</a>
+        </article>
+
+        <article class="price-card">
+          <div>
+            <span class="tag tag-live">Implementación Llave en Mano</span>
+            <h3 style="margin:0.55rem 0 0.2rem;">Auditoría 48h o Piloto 7 Días</h3>
+            <div class="price-amount">$299–$690 <span>alcance fijo</span></div>
+            <ul class="check-list">
+              <li><strong>Auditoría AWS FinOps 48h ($299):</strong> plan Terraform para recortar 25–60%.</li>
+              <li><strong>Piloto Vertical 7 Días ($690):</strong> conectamos WhatsApp, ERP o Docs en tu cuenta.</li>
+              <li>Soporte opcional $297/mes solo si lo necesitas.</li>
+            </ul>
+          </div>
+          <a class="btn" href="mailto:gabhack@gmail.com?subject=TuringTec%20B2B%20Pilot%20%2F%20Audit&body=Hola%20Gabriel%2C%20quiero%20agendar%20un%20Piloto%20o%20Auditor%C3%ADa%20FinOps.">Solicitar Piloto / Auditoría →</a>
+        </article>
+      </div>
+
+      <div class="guarantee-bar">
+        <div>
+          <strong>Garantía Cero Lock-In y Control Total:</strong>
+          <span style="color:var(--muted); font-size:0.9rem;">
+            Te quedas con el 100% del código, workflows y conectores MCP en tu propia infraestructura. Sin rentas obligatorias.
+          </span>
+        </div>
+        <a class="btn btn-sm" href="https://github.com/gabhack/aws-finops-guard" target="_blank" rel="noopener">Inspeccionar código en GitHub →</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-kicker">// PREGUNTAS FRECUENTES</div>
+        <h2>Respuestas directas antes de empezar</h2>
+      </div>
+      <div class="faq-list"><details class="faq-item"><summary>¿Debo pagar suscripciones SaaS mensuales por estos agentes?</summary><p>No. Todos los kits corren self-hosted en tu propio Docker n8n o Python/MCP usando tus propias API keys (BYOK), sin comisiones mensuales ni amarres de proveedor.</p></details><details class="faq-item"><summary>¿Puedo instalar estos agentes para mis propios clientes en marca blanca?</summary><p>Sí. El paquete Business-in-a-Box ($99) incluye licencia comercial para desplegar y personalizar los 15 workflows n8n, 4 servidores MCP y 12 Agent Skills para clientes ilimitados.</p></details><details class="faq-item"><summary>¿Qué pasa si un caso es complejo o crítico (urgencia médica o factura descuadrada)?</summary><p>Todos nuestros flujos incluyen validación determinística y reglas Human-in-the-Loop para pausar el bot y escalar al instante a tu equipo por WhatsApp, Chatwoot o Slack.</p></details><details class="faq-item"><summary>¿Cuándo conviene el Kit de $39–$99 vs. el Piloto Llave en Mano de $690?</summary><p>Si tienes perfil técnico o agencia, compra los kits self-hosted ($39–$99) y despliégalos hoy. Si prefieres que nuestro equipo conecte tu WhatsApp, ERP o AWS en 7 días con entrega llave en mano, reserva el piloto.</p></details></div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <h4>Soluciones Verticales de Agentes IA</h4>
+          <ul><li><a href="../es/solutions/clinic-whatsapp-voice-agent/">Recepcionista IA WhatsApp para Clínicas</a></li><li><a href="../es/solutions/hardware-b2b-quoting-agent/">Cotizador B2B Ferretero por WhatsApp</a></li><li><a href="../es/solutions/invoice-pdf-extraction-agent/">Extractor de Facturas PDF a ERP</a></li><li><a href="../es/solutions/aws-finops-guardrails-mcp/">Auditor FinOps AWS y Tokens LLM (MCP)</a></li><li><a href="../es/solutions/n8n-ai-agent-workflows-pack/">Pack 15 Workflows n8n de Agentes IA</a></li><li><a href="../es/solutions/mcp-agent-business-in-a-box/">AI Agent Business-in-a-Box ($99)</a></li></ul>
+        </div>
+        <div>
+          <h4>Calculadoras Interactivas de ROI</h4>
+          <ul><li><a href="../es/compare/n8n-vs-zapier-vs-make-calculator/">Calculadora n8n vs Zapier vs Make</a></li><li><a href="../es/compare/aws-finops-open-source-tools/">Comparativa FinOps AWS + Calculadora</a></li><li><a href="../es/compare/clinic-whatsapp-ai-bot-roi/">Calculadora ROI WhatsApp para Clínicas</a></li></ul>
+        </div>
+        <div>
+          <h4>Ecosistema Open-Core y Cloud</h4>
+          <ul>
+            <li><a href="https://github.com/gabhack/aws-finops-guard" target="_blank" rel="noopener">aws-finops-guard (GitHub CLI + MCP)</a></li>
+            <li><a href="https://github.com/gabhack/apify-cloud-mcp-suite" target="_blank" rel="noopener">Apify Dual-Mode MCP Suite (3 Servers)</a></li>
+            <li><a href="https://gabhack.github.io/cloudcert-lab/" target="_blank" rel="noopener">CloudCert Lab — Simulador Certificaciones Cloud</a></li>
+            <li><a href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Tienda Oficial Gumroad ($39–$99)</a></li>
+            <li><a href="../llms-full.txt">llms-full.txt (Referencia IA)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:0.5rem;">
+        <span>© 2026 TuringTec Agent Studio · Agentes IA B2B, Servidores MCP y FinOps AWS.</span>
+        <span>Actualizado 2026-11-27</span>
+      </div>
+    </footer>
+  </main>
+  <script src="../studio.js"></script>
+</body>
+</html>

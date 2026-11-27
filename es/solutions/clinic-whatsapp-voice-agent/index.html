@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recepcionista IA 24/7 por WhatsApp y Voz para Clínicas (Citas + Anti-Inasistencias) | TuringTec Agent Studio</title>
+  <meta name="description" content="Implementa una recepcionista IA 24/7 en WhatsApp y Voz para clínicas médicas y odontológicas. Agenda citas en tiempo real y reduce inasistencias con recordatorios automáticos 24h/2h sin rentas SaaS." />
+  <link rel="canonical" href="https://gabhack.github.io/turingtec-agent-studio/es/solutions/clinic-whatsapp-voice-agent/" />
+  <link rel="alternate" hreflang="en" href="https://gabhack.github.io/turingtec-agent-studio/solutions/clinic-whatsapp-voice-agent/" />
+  <link rel="alternate" hreflang="es" href="https://gabhack.github.io/turingtec-agent-studio/es/solutions/clinic-whatsapp-voice-agent/" />
+  <link rel="alternate" hreflang="x-default" href="https://gabhack.github.io/turingtec-agent-studio/solutions/clinic-whatsapp-voice-agent/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:title" content="Recepcionista IA 24/7 por WhatsApp y Voz para Clínicas (Citas + Anti-Inasistencias) | TuringTec Agent Studio" />
+  <meta property="og:description" content="Implementa una recepcionista IA 24/7 en WhatsApp y Voz para clínicas médicas y odontológicas. Agenda citas en tiempo real y reduce inasistencias con recordatorios automáticos 24h/2h sin rentas SaaS." />
+  <meta property="og:url" content="https://gabhack.github.io/turingtec-agent-studio/es/solutions/clinic-whatsapp-voice-agent/" />
+  <meta property="og:image" content="https://gabhack.github.io/turingtec-agent-studio/assets/og/es-clinic-whatsapp-voice-agent.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Recepcionista IA 24/7 por WhatsApp y Voz para Clínicas (Citas + Anti-Inasistencias) | TuringTec Agent Studio" />
+  <meta name="twitter:description" content="Implementa una recepcionista IA 24/7 en WhatsApp y Voz para clínicas médicas y odontológicas. Agenda citas en tiempo real y reduce inasistencias con recordatorios automáticos 24h/2h sin rentas SaaS." />
+  <meta name="twitter:image" content="https://gabhack.github.io/turingtec-agent-studio/assets/og/es-clinic-whatsapp-voice-agent.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../../styles.css" />
+  <script>
+    (function(){
+      var t = localStorage.getItem("tt_theme_v2");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <script src="https://gumroad.com/js/gumroad.js" defer></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TuringTec Agent Studio", "item": "https://gabhack.github.io/turingtec-agent-studio/es/"}, {"@type": "ListItem", "position": 2, "name": "Recepcionista IA WhatsApp para Clínicas", "item": "https://gabhack.github.io/turingtec-agent-studio/es/solutions/clinic-whatsapp-voice-agent/"}]}, {"@type": "SoftwareApplication", "name": "Recepcionista IA WhatsApp para Clínicas", "description": "Implementa una recepcionista IA 24/7 en WhatsApp y Voz para clínicas médicas y odontológicas. Agenda citas en tiempo real y reduce inasistencias con recordatorios automáticos 24h/2h sin rentas SaaS.", "applicationCategory": "BusinessApplication", "operatingSystem": "Cross-Platform", "inLanguage": "es"}, {"@type": "FAQPage", "inLanguage": "es", "mainEntity": [{"@type": "Question", "name": "¿Tengo que pagar mensualidades por cada recepcionista o sede?", "acceptedAnswer": {"@type": "Answer", "text": "No. Eres dueño del flujo n8n y lo corres en tu propio servidor Docker conectado a la API oficial de WhatsApp Business sin rentas por asiento."}}, {"@type": "Question", "name": "¿Qué pasa si un paciente reporta una urgencia médica?", "acceptedAnswer": {"@type": "Answer", "text": "Las reglas de seguridad detectan síntomas de alerta, pausan la automatización y transfieren de inmediato el caso a tu equipo humano."}}]}]}</script>
+</head>
+<body class="ambient-bg">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../">
+        <span class="brand-mark">TT</span>
+        <span class="brand-title">TuringTec</span>
+        <span class="brand-live"><span class="live-dot"></span>4 demos en vivo</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a class="nav-link" href="../../#sandboxes">Demos en Vivo</a>
+        <a class="nav-link" href="../../#solutions">Soluciones</a>
+        <a class="nav-link" href="../../#calculators">Calculadoras ROI</a>
+        <a class="nav-link" href="../../#pricing">Precios</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <a class="lang-opt " href="../../../solutions/clinic-whatsapp-voice-agent/" hreflang="en" rel="alternate" data-lang="en">EN</a>
+          <a class="lang-opt active" href="./" hreflang="es" rel="alternate" data-lang="es">ES</a>
+        </div>
+        <button id="btnTheme" class="btn btn-icon" type="button" aria-label="Toggle theme">Claro</button>
+        <a class="btn btn-primary btn-sm" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Ver Tienda</a>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div style="font-size:0.82rem; color:var(--muted); margin-bottom:1rem;">
+      <a href="../../" style="color:var(--brand-hover); text-decoration:none;">TuringTec Agent Studio</a> / Recepcionista IA WhatsApp para Clínicas
+    </div>
+
+    <section class="hero-split" style="padding-top:0.25rem;">
+      <div>
+        <div class="status-pill"><span class="live-dot"></span><span>Clínicas · WhatsApp y Voz 24/7</span></div>
+        <h1>Recepcionista IA 24/7 por WhatsApp y Voz para Clínicas (Citas + Anti-Inasistencias)</h1>
+        <p class="hero-lead">Deja de perder pacientes fuera de horario y horas de recepción persiguiendo confirmaciones. ClinicFlow AI responde WhatsApp en menos de 2 segundos, consulta cupos reales en agenda y envía recordatorios automáticos 24h y 2h antes sobre tu propia infraestructura.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Comprar Kit Self-Hosted →</a>
+          <a class="btn" href="../../#sandboxes">Probar Sandbox Gratis</a>
+        </div>
+      </div>
+      <aside class="price-card featured">
+        <div>
+          <span class="tag tag-gold">Acceso Instantáneo · Sin Suscripción</span>
+          <div style="margin-top:0.85rem; font-size:0.78rem; color:var(--muted); font-weight:700;">KIT SELF-HOSTED</div>
+          <div style="font-size:1.35rem; font-weight:800; margin:0.2rem 0 0.8rem;">$39 Pack n8n / $99 Business-in-a-Box</div>
+          <div style="font-size:0.78rem; color:var(--muted); font-weight:700;">IMPLEMENTACIÓN LLAVE EN MANO</div>
+          <div style="font-size:1.15rem; font-weight:700; color:var(--live); margin:0.2rem 0 0.9rem;">$690 Piloto Llave en Mano (7 días)</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:0.55rem;">
+          <a class="btn btn-primary" href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Abrir Checkout en Gumroad →</a>
+          <a class="btn" href="mailto:gabhack@gmail.com?subject=Recepcionista IA WhatsApp para Clínicas">Solicitar Piloto B2B</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="card section" style="margin-top:1.5rem;">
+      <h2 style="margin:0 0 0.6rem; font-size:1.25rem;">Arquitectura y Especificaciones de Producción</h2>
+      <table class="data-table">
+        <thead><tr><th>Componente</th><th>Especificación</th></tr></thead>
+        <tbody><tr><td><strong>Canales</strong></td><td>Meta WhatsApp Cloud API oficial + Voz natural opcional (ElevenLabs / Vapi)</td></tr><tr><td><strong>Agenda en Vivo</strong></td><td>Consulta de cupos, reserva, reprogramación y recepción de carné de seguro</td></tr><tr><td><strong>Motor Anti-No-Show</strong></td><td>Confirmación automática 24h y 2h antes + llenado automático desde lista de espera</td></tr><tr><td><strong>Seguridad Clínica</strong></td><td>Escalamiento inmediato a tu recepción humana por Chatwoot ante urgencias</td></tr><tr><td><strong>Propiedad Total</strong></td><td>100% self-hosted en Docker n8n + BYOK (~$0.004/ventana WhatsApp, $0/asiento)</td></tr></tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <div class="section-header"><h2>Preguntas Frecuentes</h2></div>
+      <div class="faq-list"><details class="faq-item"><summary>¿Tengo que pagar mensualidades por cada recepcionista o sede?</summary><p>No. Eres dueño del flujo n8n y lo corres en tu propio servidor Docker conectado a la API oficial de WhatsApp Business sin rentas por asiento.</p></details><details class="faq-item"><summary>¿Qué pasa si un paciente reporta una urgencia médica?</summary><p>Las reglas de seguridad detectan síntomas de alerta, pausan la automatización y transfieren de inmediato el caso a tu equipo humano.</p></details></div>
+    </section>
+
+    <section class="section">
+      <div class="section-header"><h2>Otras Soluciones TuringTec</h2></div>
+      <div class="bento-grid"><a class="bento-card" href="../hardware-b2b-quoting-agent/"><div><span class="tag tag-brand">Ferreterías y Mayoristas · Cotizador B2B</span><h3>Cotizador B2B Ferretero por WhatsApp</h3><p>Interpreta listas de materiales por WhatsApp, cruza SKU y descuentos por volumen y genera la cotización lista para cerrar venta.</p></div><div class="bento-foot"><span>Ver</span><span>→</span></div></a><a class="bento-card" href="../invoice-pdf-extraction-agent/"><div><span class="tag tag-brand">Contabilidad y Finanzas · PDF a ERP</span><h3>Extractor de Facturas PDF a ERP</h3><p>Lee facturas PDF sin plantillas rígidas, verifica sumas e IVA automáticamente y alerta discrepancias antes de causar en tu ERP.</p></div><div class="bento-foot"><span>Ver</span><span>→</span></div></a><a class="bento-card" href="../aws-finops-guardrails-mcp/"><div><span class="tag tag-brand">FinOps AWS · CLI Open-Core + MCP</span><h3>Auditor FinOps AWS y Tokens LLM (MCP)</h3><p>Detecta EBS huérfanos, NAT Gateways costosos, RDS sobredimensionados y desperdicio en tokens LLM desde tu terminal o Claude/Cursor.</p></div><div class="bento-foot"><span>Ver</span><span>→</span></div></a><a class="bento-card" href="../n8n-ai-agent-workflows-pack/"><div><span class="tag tag-brand">15 Flujos JSON + Docker Self-Host</span><h3>Pack 15 Workflows n8n de Agentes IA</h3><p>15 flujos JSON n8n listos para importar + Docker Compose ($0 licencia software) para lanzar automatizaciones B2B hoy mismo.</p></div><div class="bento-foot"><span>Ver</span><span>→</span></div></a><a class="bento-card" href="../mcp-agent-business-in-a-box/"><div><span class="tag tag-brand">Bóveda Completa · Ahorra 60%</span><h3>AI Agent Business-in-a-Box ($99)</h3><p>Todo en un solo paquete: 15 flujos n8n, 4 servidores MCP, 12 Agent Skills y licencia comercial para desplegar a clientes ilimitados.</p></div><div class="bento-foot"><span>Ver</span><span>→</span></div></a></div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <h4>Soluciones Verticales de Agentes IA</h4>
+          <ul><li><a href="../../../es/solutions/clinic-whatsapp-voice-agent/">Recepcionista IA WhatsApp para Clínicas</a></li><li><a href="../../../es/solutions/hardware-b2b-quoting-agent/">Cotizador B2B Ferretero por WhatsApp</a></li><li><a href="../../../es/solutions/invoice-pdf-extraction-agent/">Extractor de Facturas PDF a ERP</a></li><li><a href="../../../es/solutions/aws-finops-guardrails-mcp/">Auditor FinOps AWS y Tokens LLM (MCP)</a></li><li><a href="../../../es/solutions/n8n-ai-agent-workflows-pack/">Pack 15 Workflows n8n de Agentes IA</a></li><li><a href="../../../es/solutions/mcp-agent-business-in-a-box/">AI Agent Business-in-a-Box ($99)</a></li></ul>
+        </div>
+        <div>
+          <h4>Calculadoras Interactivas de ROI</h4>
+          <ul><li><a href="../../../es/compare/n8n-vs-zapier-vs-make-calculator/">Calculadora n8n vs Zapier vs Make</a></li><li><a href="../../../es/compare/aws-finops-open-source-tools/">Comparativa FinOps AWS + Calculadora</a></li><li><a href="../../../es/compare/clinic-whatsapp-ai-bot-roi/">Calculadora ROI WhatsApp para Clínicas</a></li></ul>
+        </div>
+        <div>
+          <h4>Ecosistema Open-Core y Cloud</h4>
+          <ul>
+            <li><a href="https://github.com/gabhack/aws-finops-guard" target="_blank" rel="noopener">aws-finops-guard (GitHub CLI + MCP)</a></li>
+            <li><a href="https://github.com/gabhack/apify-cloud-mcp-suite" target="_blank" rel="noopener">Apify Dual-Mode MCP Suite (3 Servers)</a></li>
+            <li><a href="https://gabhack.github.io/cloudcert-lab/" target="_blank" rel="noopener">CloudCert Lab — Simulador Certificaciones Cloud</a></li>
+            <li><a href="https://gabbler407.gumroad.com/" target="_blank" rel="noopener">Tienda Oficial Gumroad ($39–$99)</a></li>
+            <li><a href="../../../llms-full.txt">llms-full.txt (Referencia IA)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:0.5rem;">
+        <span>© 2026 TuringTec Agent Studio · Agentes IA B2B, Servidores MCP y FinOps AWS.</span>
+        <span>Actualizado 2026-11-27</span>
+      </div>
+    </footer>
+  </main>
+  <script src="../../../studio.js"></script>
+</body>
+</html>

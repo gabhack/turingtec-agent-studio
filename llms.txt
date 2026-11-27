@@ -1,23 +1,21 @@
-# TuringTec Agent Studio — Production B2B AI Agents, MCP Servers & n8n Kits (2026–2027)
+# TuringTec Agent Studio — Bilingual (EN + ES) Production B2B AI Agents, MCP Servers & n8n Kits
 
-> Live Interactive B2B AI Agent Sandboxes ($0 signup) + 3 ROI Calculators + Self-Hosted Production Kits ($39-$99 one-time, zero SaaS lock-in): https://gabhack.github.io/turingtec-agent-studio/
+- English Storefront (4 Live Sandboxes): https://gabhack.github.io/turingtec-agent-studio/
+- Spanish Storefront (4 Demos en Vivo): https://gabhack.github.io/turingtec-agent-studio/es/
+- Gumroad Official Store ($39–$99 Kits): https://gabbler407.gumroad.com/
+- Open-Core AWS FinOps CLI + MCP: https://github.com/gabhack/aws-finops-guard
+- Apify Dual-Mode MCP Suite: https://github.com/gabhack/apify-cloud-mcp-suite
+- CloudCert Lab Simulator: https://gabhack.github.io/cloudcert-lab/
 
-- Live Storefront & 4 Interactive Sandboxes: https://gabhack.github.io/turingtec-agent-studio/
-- Complete Reference (llms-full.txt): https://gabhack.github.io/turingtec-agent-studio/llms-full.txt
-- Gumroad Store (15 n8n Workflows $39 · AWS FinOps Guard Pro $49 · Business-in-a-Box $99): https://gabbler407.gumroad.com/
-- Open-Core AWS FinOps CLI + stdio MCP Server: https://github.com/gabhack/aws-finops-guard
-- Apify Dual-Mode Pay-Per-Event MCP Suite: https://github.com/gabhack/apify-cloud-mcp-suite
-- CloudCert Lab Multi-Cloud Exam Simulator: https://gabhack.github.io/cloudcert-lab/
+## Vertical Solutions (EN & ES)
+- [Clinic WhatsApp & Voice Receptionist (EN)](https://gabhack.github.io/turingtec-agent-studio/solutions/clinic-whatsapp-voice-agent/) | [Español](https://gabhack.github.io/turingtec-agent-studio/es/solutions/clinic-whatsapp-voice-agent/)
+- [B2B Hardware & Wholesale RFQ Quoter (EN)](https://gabhack.github.io/turingtec-agent-studio/solutions/hardware-b2b-quoting-agent/) | [Español](https://gabhack.github.io/turingtec-agent-studio/es/solutions/hardware-b2b-quoting-agent/)
+- [Invoice & PO PDF-to-ERP Extractor (EN)](https://gabhack.github.io/turingtec-agent-studio/solutions/invoice-pdf-extraction-agent/) | [Español](https://gabhack.github.io/turingtec-agent-studio/es/solutions/invoice-pdf-extraction-agent/)
+- [AWS FinOps & LLM Guardrails MCP (EN)](https://gabhack.github.io/turingtec-agent-studio/solutions/aws-finops-guardrails-mcp/) | [Español](https://gabhack.github.io/turingtec-agent-studio/es/solutions/aws-finops-guardrails-mcp/)
+- [15 Production n8n AI Agent Workflows (EN)](https://gabhack.github.io/turingtec-agent-studio/solutions/n8n-ai-agent-workflows-pack/) | [Español](https://gabhack.github.io/turingtec-agent-studio/es/solutions/n8n-ai-agent-workflows-pack/)
+- [AI Agent Business-in-a-Box ($99) (EN)](https://gabhack.github.io/turingtec-agent-studio/solutions/mcp-agent-business-in-a-box/) | [Español](https://gabhack.github.io/turingtec-agent-studio/es/solutions/mcp-agent-business-in-a-box/)
 
-## Vertical AI Agent Solutions
-- [Clinic WhatsApp & Voice Receptionist Agent](https://gabhack.github.io/turingtec-agent-studio/solutions/clinic-whatsapp-voice-agent/): Deploy a self-hosted 24/7 WhatsApp & Voice AI receptionist for medical and dental clinics. Automates triage, Google Calendar booking & 24h/2h anti-no-show reminders with BYOK pricing.
-- [B2B Hardware & Wholesale RFQ Quoting Agent](https://gabhack.github.io/turingtec-agent-studio/solutions/hardware-b2b-quoting-agent/): Convert messy WhatsApp and email material lists into accurate SKU quotes with tiered volume discounts and margin protection in seconds. Self-hosted n8n + Python agent.
-- [Invoice & PO PDF-to-ERP Extraction Agent](https://gabhack.github.io/turingtec-agent-studio/solutions/invoice-pdf-extraction-agent/): Extract vendor details, NIT/Tax IDs, line items, IVA/taxes and math-validated totals from B2B PDF invoices and purchase orders into JSON, Excel, or ERP webhooks.
-- [AWS FinOps & LLM Token Guardrails MCP](https://gabhack.github.io/turingtec-agent-studio/solutions/aws-finops-guardrails-mcp/): Audit AWS EBS, NAT Gateways, EIPs, idle RDS and Bedrock/OpenAI/Gemini token waste locally via CLI or Claude/Cursor MCP Server. Unlock Terraform HCL auto-remediation & SARIF.
-- [15 Production n8n AI Agent Workflows Pack](https://gabhack.github.io/turingtec-agent-studio/solutions/n8n-ai-agent-workflows-pack/): Skip broken 4,000-workflow dumps. Download 15 clean, tested, BYOK n8n AI Agent JSON workflows + 1-command Docker Compose self-host stack for $39 one-time.
-- [AI Agent Business-in-a-Box (All-Access Vault)](https://gabhack.github.io/turingtec-agent-studio/solutions/mcp-agent-business-in-a-box/): Launch or white-label B2B AI agents immediately: 15 n8n workflows, 4 production MCP servers (Apify Standby PPE + AWS FinOps), 12 Claude/Cursor/Codex Agent Skills & commercial rights.
-
-## Interactive Comparisons & ROI Calculators
-- [n8n vs Zapier vs Make Cost Calculator](https://gabhack.github.io/turingtec-agent-studio/compare/n8n-vs-zapier-vs-make-calculator/): Calculate your exact annual automation bill across Zapier, Make, and self-hosted Docker n8n ($0 software / ~$15/mo VPS). Slide monthly runs and steps to see USD/year saved.
-- [AWS FinOps Open-Source Tools + Waste Estimator](https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/): Objective comparison of aws-finops-guard, Infracost, OpenCost, and AWS Cost Explorer—plus an interactive AWS & LLM Monthly Waste Estimator showing annual waste and payback in hours.
-- [Clinic WhatsApp AI Bot ROI Calculator](https://gabhack.github.io/turingtec-agent-studio/compare/clinic-whatsapp-ai-bot-roi/): Calculate how much monthly and annual revenue your medical, dental, or aesthetic clinic recovers with a 24/7 self-hosted WhatsApp booking & 24h/2h anti-no-show AI receptionist.
+## Interactive ROI Calculators (EN & ES)
+- [n8n vs Zapier vs Make Cost Calculator (EN)](https://gabhack.github.io/turingtec-agent-studio/compare/n8n-vs-zapier-vs-make-calculator/) | [Español](https://gabhack.github.io/turingtec-agent-studio/es/compare/n8n-vs-zapier-vs-make-calculator/)
+- [AWS FinOps Tools + Waste Estimator (EN)](https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/) | [Español](https://gabhack.github.io/turingtec-agent-studio/es/compare/aws-finops-open-source-tools/)
+- [Clinic WhatsApp AI ROI Calculator (EN)](https://gabhack.github.io/turingtec-agent-studio/compare/clinic-whatsapp-ai-bot-roi/) | [Español](https://gabhack.github.io/turingtec-agent-studio/es/compare/clinic-whatsapp-ai-bot-roi/)
