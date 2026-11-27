@@ -6,5 +6,9 @@
 
 Interactive storefront and open-core B2B AI Agent ecosystem deployed at **$0/month** on GitHub Pages:
 - **Live Storefront & 4 Browser Sandboxes:** https://gabhack.github.io/turingtec-agent-studio/
+- **Interactive ROI Calculators & Comparisons:**
+  - [n8n vs Zapier vs Make Annual Cost Calculator](https://gabhack.github.io/turingtec-agent-studio/compare/n8n-vs-zapier-vs-make-calculator/)
+  - [AWS FinOps Open-Source Tools + Waste Estimator](https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/)
+  - [Clinic WhatsApp AI Bot Anti-No-Show ROI Calculator](https://gabhack.github.io/turingtec-agent-studio/compare/clinic-whatsapp-ai-bot-roi/)
 - **Vertical Solutions:** Clinic WhatsApp Receptionist · B2B Hardware RFQ Quoter · Invoice PDF-to-ERP Extractor · AWS FinOps Guardrails MCP · 15 n8n Workflows Pack · AI Agent Business-in-a-Box
 - **Ecosystem Repos:** [aws-finops-guard](https://github.com/gabhack/aws-finops-guard) · [apify-cloud-mcp-suite](https://github.com/gabhack/apify-cloud-mcp-suite) · [cloudcert-lab](https://gabhack.github.io/cloudcert-lab/)

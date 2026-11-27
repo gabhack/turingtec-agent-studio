@@ -1,6 +1,6 @@
 # TuringTec Agent Studio — Production B2B AI Agents, MCP Servers & n8n Kits (2026–2027)
 
-> Live Interactive B2B AI Agent Sandboxes ($0 signup) + Self-Hosted Production Kits ($39-$99 one-time, zero SaaS lock-in): https://gabhack.github.io/turingtec-agent-studio/
+> Live Interactive B2B AI Agent Sandboxes ($0 signup) + 3 ROI Calculators + Self-Hosted Production Kits ($39-$99 one-time, zero SaaS lock-in): https://gabhack.github.io/turingtec-agent-studio/
 
 - Live Storefront & 4 Interactive Sandboxes: https://gabhack.github.io/turingtec-agent-studio/
 - Complete Reference (llms-full.txt): https://gabhack.github.io/turingtec-agent-studio/llms-full.txt
@@ -16,3 +16,8 @@
 - [AWS FinOps & LLM Token Guardrails MCP](https://gabhack.github.io/turingtec-agent-studio/solutions/aws-finops-guardrails-mcp/): Audit AWS EBS, NAT Gateways, EIPs, idle RDS and Bedrock/OpenAI/Gemini token waste locally via CLI or Claude/Cursor MCP Server. Unlock Terraform HCL auto-remediation & SARIF.
 - [15 Production n8n AI Agent Workflows Pack](https://gabhack.github.io/turingtec-agent-studio/solutions/n8n-ai-agent-workflows-pack/): Skip broken 4,000-workflow dumps. Download 15 clean, tested, BYOK n8n AI Agent JSON workflows + 1-command Docker Compose self-host stack for $39 one-time.
 - [AI Agent Business-in-a-Box (All-Access Vault)](https://gabhack.github.io/turingtec-agent-studio/solutions/mcp-agent-business-in-a-box/): Launch or white-label B2B AI agents immediately: 15 n8n workflows, 4 production MCP servers (Apify Standby PPE + AWS FinOps), 12 Claude/Cursor/Codex Agent Skills & commercial rights.
+
+## Interactive Comparisons & ROI Calculators
+- [n8n vs Zapier vs Make Cost Calculator](https://gabhack.github.io/turingtec-agent-studio/compare/n8n-vs-zapier-vs-make-calculator/): Calculate your exact annual automation bill across Zapier, Make, and self-hosted Docker n8n ($0 software / ~$15/mo VPS). Slide monthly runs and steps to see USD/year saved.
+- [AWS FinOps Open-Source Tools + Waste Estimator](https://gabhack.github.io/turingtec-agent-studio/compare/aws-finops-open-source-tools/): Objective comparison of aws-finops-guard, Infracost, OpenCost, and AWS Cost Explorer—plus an interactive AWS & LLM Monthly Waste Estimator showing annual waste and payback in hours.
+- [Clinic WhatsApp AI Bot ROI Calculator](https://gabhack.github.io/turingtec-agent-studio/compare/clinic-whatsapp-ai-bot-roi/): Calculate how much monthly and annual revenue your medical, dental, or aesthetic clinic recovers with a 24/7 self-hosted WhatsApp booking & 24h/2h anti-no-show AI receptionist.
